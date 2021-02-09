@@ -1,0 +1,140 @@
+\hypertarget{class_category}{}\section{Category Class Reference}
+\label{class_category}\index{Category@{Category}}
+
+
+Klasa reprezentująca kategorię tematyczną którą zna program, zawiera zbiór skojarzonych ze sobą słów oraz odpowiedzi.  
+
+
+
+
+{\ttfamily \#include $<$Category.\+h$>$}
+
+Inheritance diagram for Category\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_category}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_category_a38c6bbecf5a7c111b9193baafbd77069}{Category}} (string my\+Name, vector$<$ string $>$ \&my\+Res, vector$<$ pair$<$ string, int $>$$>$ \&my\+Words)
+\begin{DoxyCompactList}\small\item\em konstruktor bezargumentowy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_a385b798b4afd899a851c5bac8c8cd8b8}\label{class_category_a385b798b4afd899a851c5bac8c8cd8b8}} 
+\mbox{\hyperlink{class_category_a385b798b4afd899a851c5bac8c8cd8b8}{Category}} (const \mbox{\hyperlink{class_category}{Category}} \&to\+Copy)
+\begin{DoxyCompactList}\small\item\em konstruktor kopiujący \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_a43d0a4f0879fdf3f2ca85a5829f6346d}\label{class_category_a43d0a4f0879fdf3f2ca85a5829f6346d}} 
+double \mbox{\hyperlink{class_category_a43d0a4f0879fdf3f2ca85a5829f6346d}{get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca aktualny wynik kategorii. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_category_a00b8f20f09b39bb7b5e519295538605a}{get\+Occurences}} (std\+::string given)
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca liczbę wystąpien danego słowa w bazie kategorii. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_a0172b590f4ffb1816288813492c3f2d0}\label{class_category_a0172b590f4ffb1816288813492c3f2d0}} 
+void \mbox{\hyperlink{class_category_a0172b590f4ffb1816288813492c3f2d0}{start\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Metoda rozpoczynająca sesję konwersacji kopiuje do wektora session\+Resp zawartość wektora actual\+Response. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_ac0d1a95a2af0e74ec2be24d64e2ba756}\label{class_category_ac0d1a95a2af0e74ec2be24d64e2ba756}} 
+void \mbox{\hyperlink{class_category_ac0d1a95a2af0e74ec2be24d64e2ba756}{add\+Responses}} (std\+::vector$<$ std\+::string $>$ \&new\+Resps)
+\begin{DoxyCompactList}\small\item\em Metoda dodająca nowe odpowiedzi do wektora. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_a3b9fb7b2b197b8bbc8200a943ff1a4ab}\label{class_category_a3b9fb7b2b197b8bbc8200a943ff1a4ab}} 
+void \mbox{\hyperlink{class_category_a3b9fb7b2b197b8bbc8200a943ff1a4ab}{end\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Metoda kończąca sesję konwersacji opróżnia wektor session\+Resp. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_a25c95562ba7af31bc16d147e3514d7a8}\label{class_category_a25c95562ba7af31bc16d147e3514d7a8}} 
+void \mbox{\hyperlink{class_category_a25c95562ba7af31bc16d147e3514d7a8}{inc\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Metoda inkrementująca wynik. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_ab5ac23059c78f3e413cee410847c7fca}\label{class_category_ab5ac23059c78f3e413cee410847c7fca}} 
+void \mbox{\hyperlink{class_category_ab5ac23059c78f3e413cee410847c7fca}{zero\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zerująca wynik. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_a176531dcc9ee8ee99d84f7815292f567}\label{class_category_a176531dcc9ee8ee99d84f7815292f567}} 
+void \mbox{\hyperlink{class_category_a176531dcc9ee8ee99d84f7815292f567}{print\+Responses}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypisująca odpowiedzi skojarzone z kategorią \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_a41ded06538a3b672e77f0444a46c8db3}\label{class_category_a41ded06538a3b672e77f0444a46c8db3}} 
+void \mbox{\hyperlink{class_category_a41ded06538a3b672e77f0444a46c8db3}{print\+Words}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypisująca słowa skojarzone z kategorią \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_category_ac2902099aab40f2f7a0283eb955981ac}{say\+Response}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwraca wylosowaną odpowiedź \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_aa374027f025754a4672273b32b28c1d9}\label{class_category_aa374027f025754a4672273b32b28c1d9}} 
+string \mbox{\hyperlink{class_category_aa374027f025754a4672273b32b28c1d9}{say\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwraca nazwę kategorii return nazwa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_a8fb6819ce1e965633a44a309fd7bcc6c}\label{class_category_a8fb6819ce1e965633a44a309fd7bcc6c}} 
+\mbox{\hyperlink{class_category}{Category}} \& \mbox{\hyperlink{class_category_a8fb6819ce1e965633a44a309fd7bcc6c}{operator=}} (\mbox{\hyperlink{class_category}{Category}} \&\&to\+Move) noexcept
+\begin{DoxyCompactList}\small\item\em przenoszący operator przypisania \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_a8855e1b941dd21b1cdb573139fbdfd3e}\label{class_category_a8855e1b941dd21b1cdb573139fbdfd3e}} 
+\mbox{\hyperlink{class_category}{Category}} \& \mbox{\hyperlink{class_category_a8855e1b941dd21b1cdb573139fbdfd3e}{operator=}} (const \mbox{\hyperlink{class_category}{Category}} \&to\+Copy) noexcept
+\begin{DoxyCompactList}\small\item\em kopiujący operator przypisania \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_category_a1451292f5ff9ab85db5a16d8842040b3}\label{class_category_a1451292f5ff9ab85db5a16d8842040b3}} 
+string \mbox{\hyperlink{class_category_a1451292f5ff9ab85db5a16d8842040b3}{name}}
+\begin{DoxyCompactList}\small\item\em nazwa kategorii \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_acc0a14213d6dc429cba0344b3709a08f}\label{class_category_acc0a14213d6dc429cba0344b3709a08f}} 
+double \mbox{\hyperlink{class_category_acc0a14213d6dc429cba0344b3709a08f}{score}}
+\begin{DoxyCompactList}\small\item\em wynik który dana kategoria uzsykała w aktualnym procesie wyliczania \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_ac5ec22045669ac0bfaa3b1c93520d3b0}\label{class_category_ac5ec22045669ac0bfaa3b1c93520d3b0}} 
+std\+::vector$<$ string $>$ \mbox{\hyperlink{class_category_ac5ec22045669ac0bfaa3b1c93520d3b0}{actual\+Response}}
+\begin{DoxyCompactList}\small\item\em wektor zawierający łańcuchy znaków reprezentujących wszytkie możliwe odpowiedzi przewidziane dla tej kategorii \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_a90339f08c3895d5a0c8c1fc487bb8512}\label{class_category_a90339f08c3895d5a0c8c1fc487bb8512}} 
+std\+::vector$<$ string $>$ \mbox{\hyperlink{class_category_a90339f08c3895d5a0c8c1fc487bb8512}{session\+Resp}}
+\begin{DoxyCompactList}\small\item\em aktualizowany w czasie sesji konwersacji wektor zawierający łańcuchy znaków reprezentujące odpowiedzi nieużyte jeszcze podczas danej sesji \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa reprezentująca kategorię tematyczną którą zna program, zawiera zbiór skojarzonych ze sobą słów oraz odpowiedzi. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_category_a38c6bbecf5a7c111b9193baafbd77069}\label{class_category_a38c6bbecf5a7c111b9193baafbd77069}} 
+\index{Category@{Category}!Category@{Category}}
+\index{Category@{Category}!Category@{Category}}
+\subsubsection{\texorpdfstring{Category()}{Category()}}
+{\footnotesize\ttfamily Category\+::\+Category (\begin{DoxyParamCaption}\item[{string}]{my\+Name,  }\item[{vector$<$ string $>$ \&}]{my\+Res,  }\item[{vector$<$ pair$<$ string, int $>$$>$ \&}]{my\+Words }\end{DoxyParamCaption})}
+
+
+
+konstruktor bezargumentowy 
+
+Konstruktor 
+\begin{DoxyParams}{Parameters}
+{\em my\+Name} & nazwa kategorii \\
+\hline
+{\em my\+Res} & wektor zawierający możliwe odpowiedzi w danej kategorii \\
+\hline
+{\em my\+Words} & wektor par zawierających słowa skojarzone z daną kategorią oraz liczbę ich wystąpień \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_category_a00b8f20f09b39bb7b5e519295538605a}\label{class_category_a00b8f20f09b39bb7b5e519295538605a}} 
+\index{Category@{Category}!getOccurences@{getOccurences}}
+\index{getOccurences@{getOccurences}!Category@{Category}}
+\subsubsection{\texorpdfstring{getOccurences()}{getOccurences()}}
+{\footnotesize\ttfamily int Category\+::get\+Occurences (\begin{DoxyParamCaption}\item[{std\+::string}]{given }\end{DoxyParamCaption})}
+
+
+
+Metoda zwracająca liczbę wystąpien danego słowa w bazie kategorii. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em given} & słowo którego liczbę wystąpień należy określić \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_category_ac2902099aab40f2f7a0283eb955981ac}\label{class_category_ac2902099aab40f2f7a0283eb955981ac}} 
+\index{Category@{Category}!sayResponse@{sayResponse}}
+\index{sayResponse@{sayResponse}!Category@{Category}}
+\subsubsection{\texorpdfstring{sayResponse()}{sayResponse()}}
+{\footnotesize\ttfamily string Category\+::say\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwraca wylosowaną odpowiedź 
+
+\begin{DoxyReturn}{Returns}
+odpowiedź 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Category.\+h\item 
+Category.\+cpp\end{DoxyCompactItemize}

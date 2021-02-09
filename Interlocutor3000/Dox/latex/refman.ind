@@ -1,0 +1,316 @@
+\begin{theindex}
+
+  \item {addTextInRange}
+    \subitem {ContainText}, \hyperpage{28}
+  \item {addToBase}
+    \subitem {Bot}, \hyperpage{12}
+  \item {addToDict}
+    \subitem {Dictionary}, \hyperpage{38}
+  \item {adjustText}
+    \subitem {ContainText}, \hyperpage{29}
+  \item {Avatar}, \hyperpage{5}
+    \subitem {Avatar}, \hyperpage{6}
+    \subitem {draw}, \hyperpage{6}
+    \subitem {setBalloon}, \hyperpage{6}
+  \item {AvatarInitializer}, \hyperpage{7}
+
+  \indexspace
+
+  \item {BeginScreen}, \hyperpage{8}
+    \subitem {BeginScreen}, \hyperpage{9}
+    \subitem {draw}, \hyperpage{9}
+    \subitem {manageKeyboard}, \hyperpage{10}
+    \subitem {manageMouse}, \hyperpage{10}
+    \subitem {manageScroll}, \hyperpage{10}
+  \item {Bot}, \hyperpage{11}
+    \subitem {addToBase}, \hyperpage{12}
+    \subitem {findClassInBase}, \hyperpage{12}
+    \subitem {getResponse}, \hyperpage{14}
+    \subitem {respond}, \hyperpage{14}
+  \item {Button}, \hyperpage{15}
+    \subitem {Button}, \hyperpage{15}
+    \subitem {sf::Drawable::draw}, \hyperpage{16}
+  \item {ButtonInitializer}, \hyperpage{17}
+
+  \indexspace
+
+  \item {Category}, \hyperpage{18}
+    \subitem {Category}, \hyperpage{19}
+    \subitem {getOccurences}, \hyperpage{19}
+    \subitem {sayResponse}, \hyperpage{20}
+  \item {CategoryCreator}, \hyperpage{20}
+    \subitem {countWords}, \hyperpage{21}
+    \subitem {inVectorString}, \hyperpage{21}
+    \subitem {readFile}, \hyperpage{22}
+  \item {changeState}
+    \subitem {UI}, \hyperpage{66}
+  \item {ChatScreen}, \hyperpage{22}
+    \subitem {ChatScreen}, \hyperpage{24}
+    \subitem {draw}, \hyperpage{24}
+    \subitem {getInstance}, \hyperpage{25}
+    \subitem {manageKeyboard}, \hyperpage{25}
+    \subitem {manageMouse}, \hyperpage{25}
+    \subitem {manageScroll}, \hyperpage{26}
+    \subitem {sendMessage}, \hyperpage{26}
+    \subitem {setSession}, \hyperpage{26}
+  \item {checkIfEntered}
+    \subitem {ContainText}, \hyperpage{29}
+  \item {colorFromString}
+    \subitem {SettingsContainer}, \hyperpage{53}
+  \item {ContainText}, \hyperpage{27}
+    \subitem {addTextInRange}, \hyperpage{28}
+    \subitem {adjustText}, \hyperpage{29}
+    \subitem {checkIfEntered}, \hyperpage{29}
+    \subitem {getMyString}, \hyperpage{29}
+    \subitem {modifyText}, \hyperpage{29}
+    \subitem {setText}, \hyperpage{30}
+  \item {ConversationField}, \hyperpage{30}
+    \subitem {ConversationField}, \hyperpage{32}
+    \subitem {drawField}, \hyperpage{32}
+    \subitem {getAvatarCoords}, \hyperpage{32}
+    \subitem {scrollView}, \hyperpage{33}
+    \subitem {setBotAvatar}, \hyperpage{33}
+    \subitem {setUserAvatar}, \hyperpage{33}
+  \item {ConvoManager}, \hyperpage{34}
+    \subitem {getSession}, \hyperpage{35}
+    \subitem {isPrevious}, \hyperpage{35}
+    \subitem {sendMessage}, \hyperpage{35}
+    \subitem {setPrevious}, \hyperpage{36}
+    \subitem {setSessionContent}, \hyperpage{36}
+    \subitem {trainBot}, \hyperpage{36}
+  \item {countWords}
+    \subitem {CategoryCreator}, \hyperpage{21}
+
+  \indexspace
+
+  \item {Dictionary}, \hyperpage{37}
+    \subitem {addToDict}, \hyperpage{38}
+    \subitem {Dictionary}, \hyperpage{37}
+    \subitem {inDict}, \hyperpage{38}
+  \item {draw}
+    \subitem {Avatar}, \hyperpage{6}
+    \subitem {BeginScreen}, \hyperpage{9}
+    \subitem {ChatScreen}, \hyperpage{24}
+    \subitem {MainScreen}, \hyperpage{41}
+    \subitem {Screen}, \hyperpage{50}
+    \subitem {SetupScreen}, \hyperpage{60}
+    \subitem {SpeechBalloon}, \hyperpage{63}
+  \item {drawField}
+    \subitem {ConversationField}, \hyperpage{32}
+
+  \indexspace
+
+  \item {eraseLast}
+    \subitem {PorterStemmer}, \hyperpage{44}
+
+  \indexspace
+
+  \item {FieldInitializer}, \hyperpage{39}
+  \item {fillBalloon}
+    \subitem {SpeechBalloon}, \hyperpage{64}
+  \item {findClassInBase}
+    \subitem {Bot}, \hyperpage{12}
+
+  \indexspace
+
+  \item {getAvatarCoords}
+    \subitem {ConversationField}, \hyperpage{32}
+  \item {getBotname}
+    \subitem {SettingsContainer}, \hyperpage{53}
+  \item {getFont}
+    \subitem {SettingsContainer}, \hyperpage{53}
+  \item {getInstance}
+    \subitem {ChatScreen}, \hyperpage{25}
+    \subitem {MainScreen}, \hyperpage{42}
+    \subitem {SetupScreen}, \hyperpage{61}
+  \item {getMyString}
+    \subitem {ContainText}, \hyperpage{29}
+  \item {getOccurences}
+    \subitem {Category}, \hyperpage{19}
+  \item {getResponse}
+    \subitem {Bot}, \hyperpage{14}
+  \item {getRndIntInRange}
+    \subitem {SettingsContainer}, \hyperpage{53}
+  \item {getSession}
+    \subitem {ConvoManager}, \hyperpage{35}
+  \item {getSessionFile}
+    \subitem {SettingsContainer}, \hyperpage{55}
+  \item {getUsername}
+    \subitem {SettingsContainer}, \hyperpage{55}
+
+  \indexspace
+
+  \item {inDict}
+    \subitem {Dictionary}, \hyperpage{38}
+  \item {initsAvatarFront}
+    \subitem {SettingsContainer}, \hyperpage{55}
+  \item {initsButtonFront}
+    \subitem {SettingsContainer}, \hyperpage{55}
+  \item {initsFieldFront}
+    \subitem {SettingsContainer}, \hyperpage{56}
+  \item {initsSPFront}
+    \subitem {SettingsContainer}, \hyperpage{56}
+  \item {InteractableMouse}, \hyperpage{39}
+  \item {inVectorString}
+    \subitem {CategoryCreator}, \hyperpage{21}
+  \item {isPrevious}
+    \subitem {ConvoManager}, \hyperpage{35}
+
+  \indexspace
+
+  \item {MainScreen}, \hyperpage{40}
+    \subitem {draw}, \hyperpage{41}
+    \subitem {getInstance}, \hyperpage{42}
+    \subitem {MainScreen}, \hyperpage{41}
+    \subitem {manageKeyboard}, \hyperpage{42}
+    \subitem {manageMouse}, \hyperpage{42}
+    \subitem {manageScroll}, \hyperpage{43}
+  \item {manageKeyboard}
+    \subitem {BeginScreen}, \hyperpage{10}
+    \subitem {ChatScreen}, \hyperpage{25}
+    \subitem {MainScreen}, \hyperpage{42}
+    \subitem {Screen}, \hyperpage{50}
+    \subitem {SetupScreen}, \hyperpage{61}
+    \subitem {UI}, \hyperpage{66}
+  \item {manageMouse}
+    \subitem {BeginScreen}, \hyperpage{10}
+    \subitem {ChatScreen}, \hyperpage{25}
+    \subitem {MainScreen}, \hyperpage{42}
+    \subitem {Screen}, \hyperpage{50}
+    \subitem {SetupScreen}, \hyperpage{61}
+    \subitem {UI}, \hyperpage{67}
+  \item {manageScroll}
+    \subitem {BeginScreen}, \hyperpage{10}
+    \subitem {ChatScreen}, \hyperpage{26}
+    \subitem {MainScreen}, \hyperpage{43}
+    \subitem {Screen}, \hyperpage{51}
+    \subitem {SetupScreen}, \hyperpage{62}
+    \subitem {UI}, \hyperpage{67}
+  \item {modifyText}
+    \subitem {ContainText}, \hyperpage{29}
+
+  \indexspace
+
+  \item {PorterStemmer}, \hyperpage{43}
+    \subitem {eraseLast}, \hyperpage{44}
+    \subitem {stem}, \hyperpage{45}
+  \item {ProcessText}, \hyperpage{45}
+    \subitem {stem}, \hyperpage{46}
+    \subitem {testString}, \hyperpage{46}
+    \subitem {tokenize}, \hyperpage{46}
+
+  \indexspace
+
+  \item {Question}, \hyperpage{47}
+    \subitem {Question}, \hyperpage{48}
+
+  \indexspace
+
+  \item {readAvatarInitializationFile}
+    \subitem {SettingsContainer}, \hyperpage{56}
+  \item {readButtonInitializationFile}
+    \subitem {SettingsContainer}, \hyperpage{57}
+  \item {ReadException}, \hyperpage{48}
+  \item {readFieldInitializationFile}
+    \subitem {SettingsContainer}, \hyperpage{57}
+  \item {readFile}
+    \subitem {CategoryCreator}, \hyperpage{22}
+  \item {readSpeechBalloonInitializationFile}
+    \subitem {SettingsContainer}, \hyperpage{57}
+  \item {respond}
+    \subitem {Bot}, \hyperpage{14}
+
+  \indexspace
+
+  \item {sayResponse}
+    \subitem {Category}, \hyperpage{20}
+  \item {Screen}, \hyperpage{49}
+    \subitem {draw}, \hyperpage{50}
+    \subitem {manageKeyboard}, \hyperpage{50}
+    \subitem {manageMouse}, \hyperpage{50}
+    \subitem {manageScroll}, \hyperpage{51}
+    \subitem {Screen}, \hyperpage{49}
+  \item {scrollView}
+    \subitem {ConversationField}, \hyperpage{33}
+  \item {sendMessage}
+    \subitem {ChatScreen}, \hyperpage{26}
+    \subitem {ConvoManager}, \hyperpage{35}
+  \item {setBalloon}
+    \subitem {Avatar}, \hyperpage{6}
+  \item {setBotAvatar}
+    \subitem {ConversationField}, \hyperpage{33}
+  \item {setBotname}
+    \subitem {SettingsContainer}, \hyperpage{57}
+  \item {setFont}
+    \subitem {SettingsContainer}, \hyperpage{58}
+  \item {setPrevious}
+    \subitem {ConvoManager}, \hyperpage{36}
+  \item {setSession}
+    \subitem {ChatScreen}, \hyperpage{26}
+  \item {setSessionContent}
+    \subitem {ConvoManager}, \hyperpage{36}
+  \item {setSessionFile}
+    \subitem {SettingsContainer}, \hyperpage{58}
+  \item {setText}
+    \subitem {ContainText}, \hyperpage{30}
+  \item {SettingsContainer}, \hyperpage{51}
+    \subitem {colorFromString}, \hyperpage{53}
+    \subitem {getBotname}, \hyperpage{53}
+    \subitem {getFont}, \hyperpage{53}
+    \subitem {getRndIntInRange}, \hyperpage{53}
+    \subitem {getSessionFile}, \hyperpage{55}
+    \subitem {getUsername}, \hyperpage{55}
+    \subitem {initsAvatarFront}, \hyperpage{55}
+    \subitem {initsButtonFront}, \hyperpage{55}
+    \subitem {initsFieldFront}, \hyperpage{56}
+    \subitem {initsSPFront}, \hyperpage{56}
+    \subitem {readAvatarInitializationFile}, \hyperpage{56}
+    \subitem {readButtonInitializationFile}, \hyperpage{57}
+    \subitem {readFieldInitializationFile}, \hyperpage{57}
+    \subitem {readSpeechBalloonInitializationFile}, \hyperpage{57}
+    \subitem {setBotname}, \hyperpage{57}
+    \subitem {setFont}, \hyperpage{58}
+    \subitem {setSessionFile}, \hyperpage{58}
+    \subitem {setUsername}, \hyperpage{58}
+  \item {SettingsScreen}, \hyperpage{59}
+  \item {SetupScreen}, \hyperpage{59}
+    \subitem {draw}, \hyperpage{60}
+    \subitem {getInstance}, \hyperpage{61}
+    \subitem {manageKeyboard}, \hyperpage{61}
+    \subitem {manageMouse}, \hyperpage{61}
+    \subitem {manageScroll}, \hyperpage{62}
+    \subitem {SetupScreen}, \hyperpage{60}
+  \item {setUserAvatar}
+    \subitem {ConversationField}, \hyperpage{33}
+  \item {setUsername}
+    \subitem {SettingsContainer}, \hyperpage{58}
+  \item {sf::Drawable::draw}
+    \subitem {Button}, \hyperpage{16}
+  \item {SpeechBalloon}, \hyperpage{62}
+    \subitem {draw}, \hyperpage{63}
+    \subitem {fillBalloon}, \hyperpage{64}
+    \subitem {SpeechBalloon}, \hyperpage{63}
+  \item {SpeechBalloonInitializer}, \hyperpage{64}
+  \item {stem}
+    \subitem {PorterStemmer}, \hyperpage{45}
+    \subitem {ProcessText}, \hyperpage{46}
+
+  \indexspace
+
+  \item {testString}
+    \subitem {ProcessText}, \hyperpage{46}
+  \item {tokenize}
+    \subitem {ProcessText}, \hyperpage{46}
+  \item {trainBot}
+    \subitem {ConvoManager}, \hyperpage{36}
+
+  \indexspace
+
+  \item {UI}, \hyperpage{65}
+    \subitem {changeState}, \hyperpage{66}
+    \subitem {manageKeyboard}, \hyperpage{66}
+    \subitem {manageMouse}, \hyperpage{67}
+    \subitem {manageScroll}, \hyperpage{67}
+    \subitem {UI}, \hyperpage{66}
+
+\end{theindex}

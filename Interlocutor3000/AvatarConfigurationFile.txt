@@ -1,0 +1,1 @@
+userx:0.8 usery:0.3 botx:0.1 boty:0.6 balluserx:450.0 ballusery:125.0 ballbotx:100.0 ballboty:150.0 charsize:20.0 posx:0.25 posy:1.0

@@ -1,0 +1,114 @@
+\hypertarget{class_category_creator}{}\section{Category\+Creator Class Reference}
+\label{class_category_creator}\index{CategoryCreator@{CategoryCreator}}
+
+
+Klasa odpowiedzialna za sczytanie pliku z danymi i stworzenie na ich podstawie kategorii do użycia przez program.  
+
+
+
+
+{\ttfamily \#include $<$Category\+Creator.\+h$>$}
+
+Inheritance diagram for Category\+Creator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_category_creator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ pair$<$ string, int $>$ $>$ \mbox{\hyperlink{class_category_creator_af360522860174df13d38103f06024406}{count\+Words}} (vector$<$ string $>$ \&my\+Words)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za zliczenie wystąpień słów. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_category_creator_a2c8b4f34e75ed4f6fa94ebe47a14b86d}{in\+Vector\+String}} (vector$<$ string $>$ \&vctr, string str, vector$<$ string $>$\+::iterator border)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdzająca czy podane słowo zawiera się w podanym przedziale wektora. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_category_creator_a4f5b6a367857be837f587946be1cdef3}{read\+File}} (const char $\ast$filename, \mbox{\hyperlink{class_bot}{Bot}} \&to\+Feed)
+\begin{DoxyCompactList}\small\item\em Metoda sczytująca informacje z pliku i na ich podstawie zapełniająca bazę kategorii obiektu klasy \mbox{\hyperlink{class_bot}{Bot}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_creator_acc39fe819a9495d14c9e260d8000be86}\label{class_category_creator_acc39fe819a9495d14c9e260d8000be86}} 
+istream \& \mbox{\hyperlink{class_category_creator_acc39fe819a9495d14c9e260d8000be86}{operator$>$$>$}} (istream \&input)
+\begin{DoxyCompactList}\small\item\em operator wpisania ze strumienia jego zadaniem jest sczytanie jednej linii pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_category_creator_a3332317985ddb3cac71dd13ad27fc12a}\label{class_category_creator_a3332317985ddb3cac71dd13ad27fc12a}} 
+string \mbox{\hyperlink{class_category_creator_a3332317985ddb3cac71dd13ad27fc12a}{actual\+Class}}
+\begin{DoxyCompactList}\small\item\em aktualnie przetwarzana kategoria \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_creator_ae2322d7b74a0619b8af07ab1e9b079e6}\label{class_category_creator_ae2322d7b74a0619b8af07ab1e9b079e6}} 
+vector$<$ string $>$ \mbox{\hyperlink{class_category_creator_ae2322d7b74a0619b8af07ab1e9b079e6}{tokens}}
+\begin{DoxyCompactList}\small\item\em aktualnie przetwarzane łańcuchy znaków -\/ słowa \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_creator_a39cacc544e00f614021aab4179b87be4}\label{class_category_creator_a39cacc544e00f614021aab4179b87be4}} 
+vector$<$ string $>$ \mbox{\hyperlink{class_category_creator_a39cacc544e00f614021aab4179b87be4}{responses}}
+\begin{DoxyCompactList}\small\item\em aktualnie przetwarzane łańcuchy znaków -\/ odpowiedzi \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_category_creator_a1e217c8444580c05bc16eae7213a187a}\label{class_category_creator_a1e217c8444580c05bc16eae7213a187a}} 
+ifstream \mbox{\hyperlink{class_category_creator_a1e217c8444580c05bc16eae7213a187a}{training\+File}}
+\begin{DoxyCompactList}\small\item\em plik zawierający dane potrzebne do stworzenia kategorii \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa odpowiedzialna za sczytanie pliku z danymi i stworzenie na ich podstawie kategorii do użycia przez program. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_category_creator_af360522860174df13d38103f06024406}\label{class_category_creator_af360522860174df13d38103f06024406}} 
+\index{CategoryCreator@{CategoryCreator}!countWords@{countWords}}
+\index{countWords@{countWords}!CategoryCreator@{CategoryCreator}}
+\subsubsection{\texorpdfstring{countWords()}{countWords()}}
+{\footnotesize\ttfamily vector$<$ pair$<$ string, int $>$ $>$ Category\+Creator\+::count\+Words (\begin{DoxyParamCaption}\item[{vector$<$ string $>$ \&}]{my\+Words }\end{DoxyParamCaption})}
+
+
+
+Metoda odpowiedzialna za zliczenie wystąpień słów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Words} & wektor ze słowami \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wektor par słowo-\/liczba wystąpień 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_category_creator_a2c8b4f34e75ed4f6fa94ebe47a14b86d}\label{class_category_creator_a2c8b4f34e75ed4f6fa94ebe47a14b86d}} 
+\index{CategoryCreator@{CategoryCreator}!inVectorString@{inVectorString}}
+\index{inVectorString@{inVectorString}!CategoryCreator@{CategoryCreator}}
+\subsubsection{\texorpdfstring{inVectorString()}{inVectorString()}}
+{\footnotesize\ttfamily bool Category\+Creator\+::in\+Vector\+String (\begin{DoxyParamCaption}\item[{vector$<$ string $>$ \&}]{vctr,  }\item[{string}]{str,  }\item[{vector$<$ string $>$\+::iterator}]{border }\end{DoxyParamCaption})}
+
+
+
+Metoda sprawdzająca czy podane słowo zawiera się w podanym przedziale wektora. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vctr} & wektor ze słowami \\
+\hline
+{\em str} & szukany napis \\
+\hline
+{\em border} & pozycja w wektorze ograniczająca obszar poszukiwań napisu od góry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+informacja czy dany napis został znaleziony 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_category_creator_a4f5b6a367857be837f587946be1cdef3}\label{class_category_creator_a4f5b6a367857be837f587946be1cdef3}} 
+\index{CategoryCreator@{CategoryCreator}!readFile@{readFile}}
+\index{readFile@{readFile}!CategoryCreator@{CategoryCreator}}
+\subsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily void Category\+Creator\+::read\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{\mbox{\hyperlink{class_bot}{Bot}} \&}]{to\+Feed }\end{DoxyParamCaption})}
+
+
+
+Metoda sczytująca informacje z pliku i na ich podstawie zapełniająca bazę kategorii obiektu klasy \mbox{\hyperlink{class_bot}{Bot}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & nazwa pliku \\
+\hline
+{\em to\+Feed} & obiekt klasy \mbox{\hyperlink{class_bot}{Bot}} którego baza ma zostać utworzona \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Category\+Creator.\+h\item 
+Category\+Creator.\+cpp\end{DoxyCompactItemize}

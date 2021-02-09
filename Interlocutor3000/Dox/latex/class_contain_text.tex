@@ -1,0 +1,208 @@
+\hypertarget{class_contain_text}{}\section{Contain\+Text Class Reference}
+\label{class_contain_text}\index{ContainText@{ContainText}}
+
+
+Klasa służąca do obsługi tekstu.  
+
+
+
+
+{\ttfamily \#include $<$Contain\+Text.\+h$>$}
+
+Inheritance diagram for Contain\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_contain_text}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_contain_text_a2b6f106829ba9f0d709f503515669214}{modify\+Text}} (sf\+::\+Uint32 letter)
+\begin{DoxyCompactList}\small\item\em Metoda modyfikująca tekst w zależności od przekazanego znaku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a7730b95d391cb91303ccef9e333073c5}\label{class_contain_text_a7730b95d391cb91303ccef9e333073c5}} 
+void \mbox{\hyperlink{class_contain_text_a7730b95d391cb91303ccef9e333073c5}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Metoda resetująca pole tekstowe. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_contain_text_a545545d8deb760df82ef9f971af6d7e2}{get\+My\+String}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca wartość aktualnie przechowywanego tekstu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_contain_text_a926b999593acea596c1f33b9ca66ea04}{check\+If\+Entered}} ()
+\begin{DoxyCompactList}\small\item\em Metoda sprawdzająca czy do pola tekstowego wpisano wartość \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_contain_text_a305522a9f8616b7702f917d72c53e5df}{set\+Text}} (Float\+Rect parent\+Dim, Vector2f relative, std\+::string text=\char`\"{}Text\char`\"{}, std\+::string name\+Font\+File=\char`\"{}times.\+ttf\char`\"{}, unsigned int text\+Size=15, Color text\+Color=Color\+::\+Black, Text\+::\+Style text\+Bold=Text\+::\+Style\+::\+Regular, Text\+::\+Style text\+Underline=Text\+::\+Style\+::\+Regular)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_contain_text_ab1cecc56c7d8bbd543f7f53f552ecac0}{adjust\+Text}} (Float\+Rect textbounds, Float\+Rect glyphbounds, float spacing)
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca zmniejszyć rozmiar liter w tekście celem zmieszczenia tekstu w obrębie przewidzianej przestrzeni. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a356e4b82f7d48db31f5fa694e77e27f9}\label{class_contain_text_a356e4b82f7d48db31f5fa694e77e27f9}} 
+void \mbox{\hyperlink{class_contain_text_a356e4b82f7d48db31f5fa694e77e27f9}{readjust\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca zwiększyć rozmiar liter w tekście gdy zmniejszana jest jego dugość \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_contain_text_acecaf7e7bd9ada71f74d7db14aee1b8e}{add\+Text\+In\+Range}} (sf\+::\+Uint32 analyzed)
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca dodać kolejną literę do tekstu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a229f1d48c2dd6d5fc6da65e046aa280d}\label{class_contain_text_a229f1d48c2dd6d5fc6da65e046aa280d}} 
+void \mbox{\hyperlink{class_contain_text_a229f1d48c2dd6d5fc6da65e046aa280d}{set\+Info\+String}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ustawiająca domyślny tekst. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_ad2171ca6dba98848a2e28250cb4c2733}\label{class_contain_text_ad2171ca6dba98848a2e28250cb4c2733}} 
+void \mbox{\hyperlink{class_contain_text_ad2171ca6dba98848a2e28250cb4c2733}{unset\+Info\+String}} ()
+\begin{DoxyCompactList}\small\item\em Metoda usuwająca domyślny tekst. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a666d4a796562b1fb5d5555d5ad8d8527}\label{class_contain_text_a666d4a796562b1fb5d5555d5ad8d8527}} 
+void \mbox{\hyperlink{class_contain_text_a666d4a796562b1fb5d5555d5ad8d8527}{set\+Local\+Offset}} (Vector2f relative)
+\begin{DoxyCompactList}\small\item\em Metoda usuwająca domyślny tekst. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_contain_text_ac19642be69760495fd933ee2fab7567e}\label{class_contain_text_ac19642be69760495fd933ee2fab7567e}} 
+bool \mbox{\hyperlink{class_contain_text_ac19642be69760495fd933ee2fab7567e}{isinfo\+String}}
+\begin{DoxyCompactList}\small\item\em Zmienna określająca czy wyświetlany jest domyślny tekst. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a281d9d33f682d71068e579216e123f4e}\label{class_contain_text_a281d9d33f682d71068e579216e123f4e}} 
+bool \mbox{\hyperlink{class_contain_text_a281d9d33f682d71068e579216e123f4e}{textfield\+Active}}
+\begin{DoxyCompactList}\small\item\em Zmienna określająca czy pole tekstowe jest aktywne. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_ad7dd7594a28cd59c44cd40b4413b4f84}\label{class_contain_text_ad7dd7594a28cd59c44cd40b4413b4f84}} 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \mbox{\hyperlink{class_contain_text_ad7dd7594a28cd59c44cd40b4413b4f84}{adjustments}}
+\begin{DoxyCompactList}\small\item\em Wektor par ilość znaków w tekście-\/rozmiar tekstu służy do powrotu do wcześniejszego rozmiaru czcionki przy usuwaniu znaków. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a54eb4616b2a2ede8e6b2ef020239687e}\label{class_contain_text_a54eb4616b2a2ede8e6b2ef020239687e}} 
+std\+::string \mbox{\hyperlink{class_contain_text_a54eb4616b2a2ede8e6b2ef020239687e}{info\+String}}
+\begin{DoxyCompactList}\small\item\em Domyślny napis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a547b80d0d48ad7830ed220e9052e2c0a}\label{class_contain_text_a547b80d0d48ad7830ed220e9052e2c0a}} 
+float \mbox{\hyperlink{class_contain_text_a547b80d0d48ad7830ed220e9052e2c0a}{actual\+Width}}
+\begin{DoxyCompactList}\small\item\em Aktualna odległość jaka pozostała do końca obszaru w którym może pojawiać sie tekst. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a267efe98beee438b2204817907d8bd17}\label{class_contain_text_a267efe98beee438b2204817907d8bd17}} 
+float \mbox{\hyperlink{class_contain_text_a267efe98beee438b2204817907d8bd17}{text\+Height}}
+\begin{DoxyCompactList}\small\item\em Aktualna wysokość tekstu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a865c7b9cc3c1e2fab3f496571d95c119}\label{class_contain_text_a865c7b9cc3c1e2fab3f496571d95c119}} 
+Text \mbox{\hyperlink{class_contain_text_a865c7b9cc3c1e2fab3f496571d95c119}{my\+Text}}
+\begin{DoxyCompactList}\small\item\em Przechowywany tekst. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_adf6317c8abd3b55973f0897c492c0a74}\label{class_contain_text_adf6317c8abd3b55973f0897c492c0a74}} 
+Font \mbox{\hyperlink{class_contain_text_adf6317c8abd3b55973f0897c492c0a74}{my\+Font}}
+\begin{DoxyCompactList}\small\item\em Używana czcionka. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a39a0ae330452181781328f3446d36c24}\label{class_contain_text_a39a0ae330452181781328f3446d36c24}} 
+Float\+Rect \mbox{\hyperlink{class_contain_text_a39a0ae330452181781328f3446d36c24}{parent}}
+\begin{DoxyCompactList}\small\item\em Wymiary kształtu w którym ma znaleźć się pole tekstowe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a7169f733415e27e7400a72c35fd0380c}\label{class_contain_text_a7169f733415e27e7400a72c35fd0380c}} 
+Vector2f \mbox{\hyperlink{class_contain_text_a7169f733415e27e7400a72c35fd0380c}{text\+Local\+Offset}}
+\begin{DoxyCompactList}\small\item\em Pozycja tekstu w obrębie kształtu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a2db12f9f109518d7cd82caf5eca96b23}\label{class_contain_text_a2db12f9f109518d7cd82caf5eca96b23}} 
+unsigned int \mbox{\hyperlink{class_contain_text_a2db12f9f109518d7cd82caf5eca96b23}{selected\+Size}}
+\begin{DoxyCompactList}\small\item\em Aktualny rozmiar liter w tekście. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_contain_text_a024e33acfca2543b139bb645b2f27dbf}\label{class_contain_text_a024e33acfca2543b139bb645b2f27dbf}} 
+unsigned int \mbox{\hyperlink{class_contain_text_a024e33acfca2543b139bb645b2f27dbf}{minimal\+Size}}
+\begin{DoxyCompactList}\small\item\em Minimalny rozmiar liter w tekście pozwalający na dobrą widoczność \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa służąca do obsługi tekstu. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_contain_text_acecaf7e7bd9ada71f74d7db14aee1b8e}\label{class_contain_text_acecaf7e7bd9ada71f74d7db14aee1b8e}} 
+\index{ContainText@{ContainText}!addTextInRange@{addTextInRange}}
+\index{addTextInRange@{addTextInRange}!ContainText@{ContainText}}
+\subsubsection{\texorpdfstring{addTextInRange()}{addTextInRange()}}
+{\footnotesize\ttfamily void Contain\+Text\+::add\+Text\+In\+Range (\begin{DoxyParamCaption}\item[{sf\+::\+Uint32}]{analyzed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda pozwalająca dodać kolejną literę do tekstu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em analyzed} & kod litery \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_contain_text_ab1cecc56c7d8bbd543f7f53f552ecac0}\label{class_contain_text_ab1cecc56c7d8bbd543f7f53f552ecac0}} 
+\index{ContainText@{ContainText}!adjustText@{adjustText}}
+\index{adjustText@{adjustText}!ContainText@{ContainText}}
+\subsubsection{\texorpdfstring{adjustText()}{adjustText()}}
+{\footnotesize\ttfamily bool Contain\+Text\+::adjust\+Text (\begin{DoxyParamCaption}\item[{Float\+Rect}]{textbounds,  }\item[{Float\+Rect}]{glyphbounds,  }\item[{float}]{spacing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda pozwalająca zmniejszyć rozmiar liter w tekście celem zmieszczenia tekstu w obrębie przewidzianej przestrzeni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em textbounds} & obszar w ktróym może pojawić się tekst \\
+\hline
+{\em glyphbounds} & aktualne wymiary znaku \\
+\hline
+{\em spacing} & odległość między liniami tekstu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true gdy udało się zmniejszyć tekst by zmieśćić go w granicach obszaru jednocześnie nie przekraczając minimalnego rozmiaru, false w przypadku przeciwnym 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_contain_text_a926b999593acea596c1f33b9ca66ea04}\label{class_contain_text_a926b999593acea596c1f33b9ca66ea04}} 
+\index{ContainText@{ContainText}!checkIfEntered@{checkIfEntered}}
+\index{checkIfEntered@{checkIfEntered}!ContainText@{ContainText}}
+\subsubsection{\texorpdfstring{checkIfEntered()}{checkIfEntered()}}
+{\footnotesize\ttfamily bool Contain\+Text\+::check\+If\+Entered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda sprawdzająca czy do pola tekstowego wpisano wartość 
+
+\begin{DoxyReturn}{Returns}
+true jeżeli wpisano, false jeżeli nie wpisano 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_contain_text_a545545d8deb760df82ef9f971af6d7e2}\label{class_contain_text_a545545d8deb760df82ef9f971af6d7e2}} 
+\index{ContainText@{ContainText}!getMyString@{getMyString}}
+\index{getMyString@{getMyString}!ContainText@{ContainText}}
+\subsubsection{\texorpdfstring{getMyString()}{getMyString()}}
+{\footnotesize\ttfamily std\+::string Contain\+Text\+::get\+My\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zwracająca wartość aktualnie przechowywanego tekstu. 
+
+\begin{DoxyReturn}{Returns}
+wartość aktualnie przechowywanego tekstu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_contain_text_a2b6f106829ba9f0d709f503515669214}\label{class_contain_text_a2b6f106829ba9f0d709f503515669214}} 
+\index{ContainText@{ContainText}!modifyText@{modifyText}}
+\index{modifyText@{modifyText}!ContainText@{ContainText}}
+\subsubsection{\texorpdfstring{modifyText()}{modifyText()}}
+{\footnotesize\ttfamily void Contain\+Text\+::modify\+Text (\begin{DoxyParamCaption}\item[{sf\+::\+Uint32}]{letter }\end{DoxyParamCaption})}
+
+
+
+Metoda modyfikująca tekst w zależności od przekazanego znaku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & kod przekazanego znaku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_contain_text_a305522a9f8616b7702f917d72c53e5df}\label{class_contain_text_a305522a9f8616b7702f917d72c53e5df}} 
+\index{ContainText@{ContainText}!setText@{setText}}
+\index{setText@{setText}!ContainText@{ContainText}}
+\subsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily void Contain\+Text\+::set\+Text (\begin{DoxyParamCaption}\item[{Float\+Rect}]{parent\+Dim,  }\item[{Vector2f}]{relative,  }\item[{std\+::string}]{text = {\ttfamily \char`\"{}Text\char`\"{}},  }\item[{std\+::string}]{name\+Font\+File = {\ttfamily \char`\"{}times.ttf\char`\"{}},  }\item[{unsigned int}]{text\+Size = {\ttfamily 15},  }\item[{Color}]{text\+Color = {\ttfamily Color\+:\+:Black},  }\item[{Text\+::\+Style}]{text\+Bold = {\ttfamily Text\+:\+:Style\+:\+:Regular},  }\item[{Text\+::\+Style}]{text\+Underline = {\ttfamily Text\+:\+:Style\+:\+:Regular} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\+Dim} & wymiary ksztaltu w który ma zostać wpisany tekst \\
+\hline
+{\em relative} & wektor z wartościami przez które należy przemnożyć wymiary kształtu by otrzymać położenie tekstu względem kształtu \\
+\hline
+{\em text} & tekst do wyświetlenia w obrębie kształu \\
+\hline
+{\em name\+Font\+File} & nazwa pliku z czcionką do stworzenia tekstu \\
+\hline
+{\em text\+Size} & rozmiar liter w tekście \\
+\hline
+{\em text\+Color} & kolor tekstu \\
+\hline
+{\em text\+Bold} & określa czy tekst powinien być napisany pogrubioną czcionką \\
+\hline
+{\em text\+Underline} & określa czy tekst powinien być podkreślony \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Contain\+Text.\+h\item 
+Contain\+Text.\+cpp\end{DoxyCompactItemize}

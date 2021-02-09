@@ -1,0 +1,110 @@
+\hypertarget{class_porter_stemmer}{}\section{Porter\+Stemmer Class Reference}
+\label{class_porter_stemmer}\index{PorterStemmer@{PorterStemmer}}
+
+
+Klasa implementująca algorytm Portera służący do redukcji wyrazów w j.  
+
+
+
+
+{\ttfamily \#include $<$Porter\+Stemmer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_porter_stemmer_a2bbf1c12f88524ebfed18836dd09b0cc}{stem}} (std\+::string \&tostem)
+\begin{DoxyCompactList}\small\item\em Metoda obsługująca algorytm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_porter_stemmer_af73f4f625f425b22c1354386d959e10f}\label{class_porter_stemmer_af73f4f625f425b22c1354386d959e10f}} 
+void \mbox{\hyperlink{class_porter_stemmer_af73f4f625f425b22c1354386d959e10f}{setparam\+VC}} ()
+\begin{DoxyCompactList}\small\item\em Parametr określający ilość samogłosek i spółgłosek w tekście. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_porter_stemmer_ad2a01247e2a9812fceeb08af1ecccff5}\label{class_porter_stemmer_ad2a01247e2a9812fceeb08af1ecccff5}} 
+void \mbox{\hyperlink{class_porter_stemmer_ad2a01247e2a9812fceeb08af1ecccff5}{step1a}} ()
+\begin{DoxyCompactList}\small\item\em Metody od step1a do step5b implementują kolejne kroki algorytmu, polegające na odnalezieniu w tekście określonych układów liter (głównie kolejności występowań samogłosek i spółgłosek) i w zależności od nich usunięcia odpowiednich koncówek. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_porter_stemmer_a34d01dd52d5324433b2b3027c50b226a}\label{class_porter_stemmer_a34d01dd52d5324433b2b3027c50b226a}} 
+void {\bfseries step1bfirst} ()
+\item 
+\mbox{\Hypertarget{class_porter_stemmer_a067258e118dfa35182d0788944ef80f7}\label{class_porter_stemmer_a067258e118dfa35182d0788944ef80f7}} 
+void {\bfseries step1bsecond} ()
+\item 
+\mbox{\Hypertarget{class_porter_stemmer_a4ae90352e22d3038c3d84e6f091a405e}\label{class_porter_stemmer_a4ae90352e22d3038c3d84e6f091a405e}} 
+void {\bfseries step1c} ()
+\item 
+\mbox{\Hypertarget{class_porter_stemmer_af7d58b5404c12e0260e785bcb38d2df9}\label{class_porter_stemmer_af7d58b5404c12e0260e785bcb38d2df9}} 
+void {\bfseries step2} ()
+\item 
+\mbox{\Hypertarget{class_porter_stemmer_aecbffa24a804203446faaeca6b57da67}\label{class_porter_stemmer_aecbffa24a804203446faaeca6b57da67}} 
+void {\bfseries step3} ()
+\item 
+\mbox{\Hypertarget{class_porter_stemmer_ab22d3345b3d370083ed0b232cf0f25e7}\label{class_porter_stemmer_ab22d3345b3d370083ed0b232cf0f25e7}} 
+void {\bfseries step4} ()
+\item 
+\mbox{\Hypertarget{class_porter_stemmer_ad694f08de38a6f2c96606870789fdfd6}\label{class_porter_stemmer_ad694f08de38a6f2c96606870789fdfd6}} 
+void {\bfseries step5a} ()
+\item 
+\mbox{\Hypertarget{class_porter_stemmer_aef8d9bd582ac59ba634135fd074296de}\label{class_porter_stemmer_aef8d9bd582ac59ba634135fd074296de}} 
+void {\bfseries step5b} ()
+\item 
+void \mbox{\hyperlink{class_porter_stemmer_afca7fe9d292c46afac56ecd8e18d59f4}{erase\+Last}} (int toerase)
+\begin{DoxyCompactList}\small\item\em Metoda usuwająca określoną liczbę liter z końca słowa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_porter_stemmer_a6dd5b2da5e4a505c6c0b560493f8e688}\label{class_porter_stemmer_a6dd5b2da5e4a505c6c0b560493f8e688}} 
+std\+::string \mbox{\hyperlink{class_porter_stemmer_a6dd5b2da5e4a505c6c0b560493f8e688}{to\+Stem}}
+\begin{DoxyCompactList}\small\item\em Słowo do zredukowania przez algorytm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_porter_stemmer_a7c9b63024d90aa531082288eb0235ea8}\label{class_porter_stemmer_a7c9b63024d90aa531082288eb0235ea8}} 
+int \mbox{\hyperlink{class_porter_stemmer_a7c9b63024d90aa531082288eb0235ea8}{word\+Len}}
+\begin{DoxyCompactList}\small\item\em Długość słowa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_porter_stemmer_a486d82e9bbe76f79114e7de52e1360d3}\label{class_porter_stemmer_a486d82e9bbe76f79114e7de52e1360d3}} 
+int \mbox{\hyperlink{class_porter_stemmer_a486d82e9bbe76f79114e7de52e1360d3}{word\+Beg}}
+\begin{DoxyCompactList}\small\item\em Indeks początku słowa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_porter_stemmer_af9a90d4238d7de0c93f9dd0a4c8ced4a}\label{class_porter_stemmer_af9a90d4238d7de0c93f9dd0a4c8ced4a}} 
+int \mbox{\hyperlink{class_porter_stemmer_af9a90d4238d7de0c93f9dd0a4c8ced4a}{param\+VC}}
+\begin{DoxyCompactList}\small\item\em Parametr określający ilość samogłosek i spółgłosek w tekście. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa implementująca algorytm Portera służący do redukcji wyrazów w j. 
+
+angielskim do ich tematów (usuwanie końcówek) 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_porter_stemmer_afca7fe9d292c46afac56ecd8e18d59f4}\label{class_porter_stemmer_afca7fe9d292c46afac56ecd8e18d59f4}} 
+\index{PorterStemmer@{PorterStemmer}!eraseLast@{eraseLast}}
+\index{eraseLast@{eraseLast}!PorterStemmer@{PorterStemmer}}
+\subsubsection{\texorpdfstring{eraseLast()}{eraseLast()}}
+{\footnotesize\ttfamily void Porter\+Stemmer\+::erase\+Last (\begin{DoxyParamCaption}\item[{int}]{toerase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda usuwająca określoną liczbę liter z końca słowa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em toerase} & liczba liter do usunięcia z końca \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_porter_stemmer_a2bbf1c12f88524ebfed18836dd09b0cc}\label{class_porter_stemmer_a2bbf1c12f88524ebfed18836dd09b0cc}} 
+\index{PorterStemmer@{PorterStemmer}!stem@{stem}}
+\index{stem@{stem}!PorterStemmer@{PorterStemmer}}
+\subsubsection{\texorpdfstring{stem()}{stem()}}
+{\footnotesize\ttfamily void Porter\+Stemmer\+::stem (\begin{DoxyParamCaption}\item[{std\+::string \&}]{tostem }\end{DoxyParamCaption})}
+
+
+
+Metoda obsługująca algorytm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tostem} & słowo do modyfikacji przez algorytm \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Porter\+Stemmer.\+h\item 
+Porter\+Stemmer.\+cpp\end{DoxyCompactItemize}

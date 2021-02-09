@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Avatar">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAYAAAAAAAAAAgAAQAEAAAAAAFA=</HashCode>
+      <FileName>Avatar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BeginScreen">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAAAAAAAIAEAAAABAIIAAAAAAAAAAQAAAAAAAAAABA=</HashCode>
+      <FileName>BeginScreen.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bot">
+    <Position X="18.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAAAAAAAAAAAAQAIAAQAAgAAIABAAABEAAAAAAAAA=</HashCode>
+      <FileName>Bot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Button">
+    <Position X="3.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAAABAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Button.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Category">
+    <Position X="15.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAIAgAEAQBIAIAAAAAAEECASAAAAgEAAACgA=</HashCode>
+      <FileName>Category.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CategoryCreator">
+    <Position X="11.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEBAAAAAAAAAAAAAAoAAAAIAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>CategoryCreator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatScreen">
+    <Position X="13" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgSAAQAAIAAAAAAAAIIAAAgBEGAABQAAAgAAAAAANA=</HashCode>
+      <FileName>ChatScreen.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContainText">
+    <Position X="3.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACBBgAgMAAAAQABAAACCQACAAYAAAAEQAQAAMAAAQDA=</HashCode>
+      <FileName>ContainText.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConversationField">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAABEFECAAAAAAAAAEEAEAAAAAAAICgAAAAIBAAAA=</HashCode>
+      <FileName>ConversationField.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConvoManager">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAAAAAgCCAAAAEAAICACABhAAEQBAEAAAAgAAAAAAA=</HashCode>
+      <FileName>ConvoManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dictionary">
+    <Position X="18.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAkAAAABCAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dictionary.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InteractableMouse">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAABAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InteractableMouse.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainScreen">
+    <Position X="10.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAIYAAAEAAAAABQAAAAAAAAAABA=</HashCode>
+      <FileName>MainScreen.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PorterStemmer">
+    <Position X="22.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAIAAQQAAEEAgAAAAAAAQAAAIACAQAAAAAAQBA=</HashCode>
+      <FileName>PorterStemmer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProcessText">
+    <Position X="15.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProcessText.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Question">
+    <Position X="18.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEACAAAAAAAAA=</HashCode>
+      <FileName>Question.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Screen">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAQARAIIAAAAAAAAAAAEAAAAAAAAABA=</HashCode>
+      <FileName>Screen.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SettingsContainer">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAgAiEAACBABAIACBACAgUWAAAIwCQIIQAAAAAAAAA=</HashCode>
+      <FileName>SettingsContainer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SetupScreen">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAABAAAAAAAAAIIAAAAAAAAAAQAAgAAAAIAABA=</HashCode>
+      <FileName>SetupScreen.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAIAAAAACAAYIBAAIAAAAkAIAAAQAAgAAEBA=</HashCode>
+      <FileName>UI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpeechBalloon">
+    <Position X="7" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAIAAAAAAAAAAAAAAAAAAIAIAAE=</HashCode>
+      <FileName>SpeechBalloon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ReadException">
+    <Position X="13.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CategoryCreator.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ButtonInitializer">
+    <Position X="17" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAIAAAAAAAAAAAAAAAQAAAAAAEAACAQAhgACAgAAA=</HashCode>
+      <FileName>SettingsContainer.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="FieldInitializer">
+    <Position X="20.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAQAQgAAAAAAAAAAIBCAEAAAAAgAAAA=</HashCode>
+      <FileName>SettingsContainer.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Begin">
+    <Position X="21" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BeginScreen.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Chat">
+    <Position X="22.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAABAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChatScreen.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Interlocutors">
+    <Position X="21" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConversationField.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="State">
+    <Position X="22.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>InteractableMouse.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MenuScreen">
+    <Position X="22.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainScreen.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="UIState">
+    <Position X="21" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAACAAAABAAAAAAAAAAAAAAEAgAAAAABAAAAAA=</HashCode>
+      <FileName>Screen.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Setup">
+    <Position X="24.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAABAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SetupScreen.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Dir">
+    <Position X="24.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
+      <FileName>SpeechBalloon.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

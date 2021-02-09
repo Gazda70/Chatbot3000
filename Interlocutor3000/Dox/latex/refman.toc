@@ -1,0 +1,189 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}% 
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}% 
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Avatar Class Reference}{5}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Constructor \& Destructor Documentation}{6}{subsection.3.1.2}% 
+\contentsline {subsubsection}{\numberline {3.1.2.1}Avatar()}{6}{subsubsection.3.1.2.1}% 
+\contentsline {subsection}{\numberline {3.1.3}Member Function Documentation}{6}{subsection.3.1.3}% 
+\contentsline {subsubsection}{\numberline {3.1.3.1}draw()}{6}{subsubsection.3.1.3.1}% 
+\contentsline {subsubsection}{\numberline {3.1.3.2}setBalloon()}{6}{subsubsection.3.1.3.2}% 
+\contentsline {section}{\numberline {3.2}Avatar\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Initializer Struct Reference}{7}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{8}{subsection.3.2.1}% 
+\contentsline {section}{\numberline {3.3}Begin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Screen Class Reference}{8}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{9}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{9}{subsection.3.3.2}% 
+\contentsline {subsubsection}{\numberline {3.3.2.1}BeginScreen()}{9}{subsubsection.3.3.2.1}% 
+\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{9}{subsection.3.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.3.1}draw()}{9}{subsubsection.3.3.3.1}% 
+\contentsline {subsubsection}{\numberline {3.3.3.2}manageKeyboard()}{10}{subsubsection.3.3.3.2}% 
+\contentsline {subsubsection}{\numberline {3.3.3.3}manageMouse()}{10}{subsubsection.3.3.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.3.4}manageScroll()}{10}{subsubsection.3.3.3.4}% 
+\contentsline {section}{\numberline {3.4}Bot Class Reference}{11}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{12}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}Member Function Documentation}{12}{subsection.3.4.2}% 
+\contentsline {subsubsection}{\numberline {3.4.2.1}addToBase()}{12}{subsubsection.3.4.2.1}% 
+\contentsline {subsubsection}{\numberline {3.4.2.2}findClassInBase()}{12}{subsubsection.3.4.2.2}% 
+\contentsline {subsubsection}{\numberline {3.4.2.3}getResponse()}{14}{subsubsection.3.4.2.3}% 
+\contentsline {subsubsection}{\numberline {3.4.2.4}respond()}{14}{subsubsection.3.4.2.4}% 
+\contentsline {section}{\numberline {3.5}Button Class Reference}{15}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{15}{subsection.3.5.1}% 
+\contentsline {subsection}{\numberline {3.5.2}Constructor \& Destructor Documentation}{15}{subsection.3.5.2}% 
+\contentsline {subsubsection}{\numberline {3.5.2.1}Button()}{16}{subsubsection.3.5.2.1}% 
+\contentsline {subsection}{\numberline {3.5.3}Member Function Documentation}{16}{subsection.3.5.3}% 
+\contentsline {subsubsection}{\numberline {3.5.3.1}sf::Drawable::draw()}{16}{subsubsection.3.5.3.1}% 
+\contentsline {section}{\numberline {3.6}Button\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Initializer Struct Reference}{17}{section.3.6}% 
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{17}{subsection.3.6.1}% 
+\contentsline {section}{\numberline {3.7}Category Class Reference}{18}{section.3.7}% 
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{19}{subsection.3.7.1}% 
+\contentsline {subsection}{\numberline {3.7.2}Constructor \& Destructor Documentation}{19}{subsection.3.7.2}% 
+\contentsline {subsubsection}{\numberline {3.7.2.1}Category()}{19}{subsubsection.3.7.2.1}% 
+\contentsline {subsection}{\numberline {3.7.3}Member Function Documentation}{19}{subsection.3.7.3}% 
+\contentsline {subsubsection}{\numberline {3.7.3.1}getOccurences()}{20}{subsubsection.3.7.3.1}% 
+\contentsline {subsubsection}{\numberline {3.7.3.2}sayResponse()}{20}{subsubsection.3.7.3.2}% 
+\contentsline {section}{\numberline {3.8}Category\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Creator Class Reference}{20}{section.3.8}% 
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{21}{subsection.3.8.1}% 
+\contentsline {subsection}{\numberline {3.8.2}Member Function Documentation}{21}{subsection.3.8.2}% 
+\contentsline {subsubsection}{\numberline {3.8.2.1}countWords()}{21}{subsubsection.3.8.2.1}% 
+\contentsline {subsubsection}{\numberline {3.8.2.2}inVectorString()}{21}{subsubsection.3.8.2.2}% 
+\contentsline {subsubsection}{\numberline {3.8.2.3}readFile()}{22}{subsubsection.3.8.2.3}% 
+\contentsline {section}{\numberline {3.9}Chat\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Screen Class Reference}{22}{section.3.9}% 
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{24}{subsection.3.9.1}% 
+\contentsline {subsection}{\numberline {3.9.2}Constructor \& Destructor Documentation}{24}{subsection.3.9.2}% 
+\contentsline {subsubsection}{\numberline {3.9.2.1}ChatScreen()}{24}{subsubsection.3.9.2.1}% 
+\contentsline {subsection}{\numberline {3.9.3}Member Function Documentation}{24}{subsection.3.9.3}% 
+\contentsline {subsubsection}{\numberline {3.9.3.1}draw()}{24}{subsubsection.3.9.3.1}% 
+\contentsline {subsubsection}{\numberline {3.9.3.2}getInstance()}{25}{subsubsection.3.9.3.2}% 
+\contentsline {subsubsection}{\numberline {3.9.3.3}manageKeyboard()}{25}{subsubsection.3.9.3.3}% 
+\contentsline {subsubsection}{\numberline {3.9.3.4}manageMouse()}{25}{subsubsection.3.9.3.4}% 
+\contentsline {subsubsection}{\numberline {3.9.3.5}manageScroll()}{26}{subsubsection.3.9.3.5}% 
+\contentsline {subsubsection}{\numberline {3.9.3.6}sendMessage()}{26}{subsubsection.3.9.3.6}% 
+\contentsline {subsubsection}{\numberline {3.9.3.7}setSession()}{26}{subsubsection.3.9.3.7}% 
+\contentsline {section}{\numberline {3.10}Contain\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Text Class Reference}{27}{section.3.10}% 
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{28}{subsection.3.10.1}% 
+\contentsline {subsection}{\numberline {3.10.2}Member Function Documentation}{28}{subsection.3.10.2}% 
+\contentsline {subsubsection}{\numberline {3.10.2.1}addTextInRange()}{28}{subsubsection.3.10.2.1}% 
+\contentsline {subsubsection}{\numberline {3.10.2.2}adjustText()}{29}{subsubsection.3.10.2.2}% 
+\contentsline {subsubsection}{\numberline {3.10.2.3}checkIfEntered()}{29}{subsubsection.3.10.2.3}% 
+\contentsline {subsubsection}{\numberline {3.10.2.4}getMyString()}{29}{subsubsection.3.10.2.4}% 
+\contentsline {subsubsection}{\numberline {3.10.2.5}modifyText()}{29}{subsubsection.3.10.2.5}% 
+\contentsline {subsubsection}{\numberline {3.10.2.6}setText()}{30}{subsubsection.3.10.2.6}% 
+\contentsline {section}{\numberline {3.11}Conversation\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Field Class Reference}{30}{section.3.11}% 
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{31}{subsection.3.11.1}% 
+\contentsline {subsection}{\numberline {3.11.2}Constructor \& Destructor Documentation}{32}{subsection.3.11.2}% 
+\contentsline {subsubsection}{\numberline {3.11.2.1}ConversationField()}{32}{subsubsection.3.11.2.1}% 
+\contentsline {subsection}{\numberline {3.11.3}Member Function Documentation}{32}{subsection.3.11.3}% 
+\contentsline {subsubsection}{\numberline {3.11.3.1}drawField()}{32}{subsubsection.3.11.3.1}% 
+\contentsline {subsubsection}{\numberline {3.11.3.2}getAvatarCoords()}{32}{subsubsection.3.11.3.2}% 
+\contentsline {subsubsection}{\numberline {3.11.3.3}scrollView()}{33}{subsubsection.3.11.3.3}% 
+\contentsline {subsubsection}{\numberline {3.11.3.4}setBotAvatar()}{33}{subsubsection.3.11.3.4}% 
+\contentsline {subsubsection}{\numberline {3.11.3.5}setUserAvatar()}{33}{subsubsection.3.11.3.5}% 
+\contentsline {section}{\numberline {3.12}Convo\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Manager Class Reference}{34}{section.3.12}% 
+\contentsline {subsection}{\numberline {3.12.1}Detailed Description}{35}{subsection.3.12.1}% 
+\contentsline {subsection}{\numberline {3.12.2}Member Function Documentation}{35}{subsection.3.12.2}% 
+\contentsline {subsubsection}{\numberline {3.12.2.1}getSession()}{35}{subsubsection.3.12.2.1}% 
+\contentsline {subsubsection}{\numberline {3.12.2.2}isPrevious()}{35}{subsubsection.3.12.2.2}% 
+\contentsline {subsubsection}{\numberline {3.12.2.3}sendMessage()}{35}{subsubsection.3.12.2.3}% 
+\contentsline {subsubsection}{\numberline {3.12.2.4}setPrevious()}{36}{subsubsection.3.12.2.4}% 
+\contentsline {subsubsection}{\numberline {3.12.2.5}setSessionContent()}{36}{subsubsection.3.12.2.5}% 
+\contentsline {subsubsection}{\numberline {3.12.2.6}trainBot()}{36}{subsubsection.3.12.2.6}% 
+\contentsline {section}{\numberline {3.13}Dictionary Class Reference}{37}{section.3.13}% 
+\contentsline {subsection}{\numberline {3.13.1}Detailed Description}{37}{subsection.3.13.1}% 
+\contentsline {subsection}{\numberline {3.13.2}Constructor \& Destructor Documentation}{37}{subsection.3.13.2}% 
+\contentsline {subsubsection}{\numberline {3.13.2.1}Dictionary()}{37}{subsubsection.3.13.2.1}% 
+\contentsline {subsection}{\numberline {3.13.3}Member Function Documentation}{38}{subsection.3.13.3}% 
+\contentsline {subsubsection}{\numberline {3.13.3.1}addToDict()}{38}{subsubsection.3.13.3.1}% 
+\contentsline {subsubsection}{\numberline {3.13.3.2}inDict()}{38}{subsubsection.3.13.3.2}% 
+\contentsline {section}{\numberline {3.14}Field\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Initializer Struct Reference}{39}{section.3.14}% 
+\contentsline {subsection}{\numberline {3.14.1}Detailed Description}{39}{subsection.3.14.1}% 
+\contentsline {section}{\numberline {3.15}Interactable\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mouse Class Reference}{39}{section.3.15}% 
+\contentsline {section}{\numberline {3.16}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Screen Class Reference}{40}{section.3.16}% 
+\contentsline {subsection}{\numberline {3.16.1}Detailed Description}{41}{subsection.3.16.1}% 
+\contentsline {subsection}{\numberline {3.16.2}Constructor \& Destructor Documentation}{41}{subsection.3.16.2}% 
+\contentsline {subsubsection}{\numberline {3.16.2.1}MainScreen()}{41}{subsubsection.3.16.2.1}% 
+\contentsline {subsection}{\numberline {3.16.3}Member Function Documentation}{41}{subsection.3.16.3}% 
+\contentsline {subsubsection}{\numberline {3.16.3.1}draw()}{41}{subsubsection.3.16.3.1}% 
+\contentsline {subsubsection}{\numberline {3.16.3.2}getInstance()}{42}{subsubsection.3.16.3.2}% 
+\contentsline {subsubsection}{\numberline {3.16.3.3}manageKeyboard()}{42}{subsubsection.3.16.3.3}% 
+\contentsline {subsubsection}{\numberline {3.16.3.4}manageMouse()}{42}{subsubsection.3.16.3.4}% 
+\contentsline {subsubsection}{\numberline {3.16.3.5}manageScroll()}{43}{subsubsection.3.16.3.5}% 
+\contentsline {section}{\numberline {3.17}Porter\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Stemmer Class Reference}{43}{section.3.17}% 
+\contentsline {subsection}{\numberline {3.17.1}Detailed Description}{44}{subsection.3.17.1}% 
+\contentsline {subsection}{\numberline {3.17.2}Member Function Documentation}{44}{subsection.3.17.2}% 
+\contentsline {subsubsection}{\numberline {3.17.2.1}eraseLast()}{44}{subsubsection.3.17.2.1}% 
+\contentsline {subsubsection}{\numberline {3.17.2.2}stem()}{45}{subsubsection.3.17.2.2}% 
+\contentsline {section}{\numberline {3.18}Process\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Text Class Reference}{45}{section.3.18}% 
+\contentsline {subsection}{\numberline {3.18.1}Detailed Description}{46}{subsection.3.18.1}% 
+\contentsline {subsection}{\numberline {3.18.2}Member Function Documentation}{46}{subsection.3.18.2}% 
+\contentsline {subsubsection}{\numberline {3.18.2.1}stem()}{46}{subsubsection.3.18.2.1}% 
+\contentsline {subsubsection}{\numberline {3.18.2.2}testString()}{46}{subsubsection.3.18.2.2}% 
+\contentsline {subsubsection}{\numberline {3.18.2.3}tokenize()}{46}{subsubsection.3.18.2.3}% 
+\contentsline {section}{\numberline {3.19}Question Class Reference}{47}{section.3.19}% 
+\contentsline {subsection}{\numberline {3.19.1}Detailed Description}{47}{subsection.3.19.1}% 
+\contentsline {subsection}{\numberline {3.19.2}Constructor \& Destructor Documentation}{48}{subsection.3.19.2}% 
+\contentsline {subsubsection}{\numberline {3.19.2.1}Question()}{48}{subsubsection.3.19.2.1}% 
+\contentsline {section}{\numberline {3.20}Read\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Exception Struct Reference}{48}{section.3.20}% 
+\contentsline {subsection}{\numberline {3.20.1}Detailed Description}{48}{subsection.3.20.1}% 
+\contentsline {section}{\numberline {3.21}Screen Class Reference}{49}{section.3.21}% 
+\contentsline {subsection}{\numberline {3.21.1}Detailed Description}{49}{subsection.3.21.1}% 
+\contentsline {subsection}{\numberline {3.21.2}Constructor \& Destructor Documentation}{49}{subsection.3.21.2}% 
+\contentsline {subsubsection}{\numberline {3.21.2.1}Screen()}{49}{subsubsection.3.21.2.1}% 
+\contentsline {subsection}{\numberline {3.21.3}Member Function Documentation}{50}{subsection.3.21.3}% 
+\contentsline {subsubsection}{\numberline {3.21.3.1}draw()}{50}{subsubsection.3.21.3.1}% 
+\contentsline {subsubsection}{\numberline {3.21.3.2}manageKeyboard()}{50}{subsubsection.3.21.3.2}% 
+\contentsline {subsubsection}{\numberline {3.21.3.3}manageMouse()}{50}{subsubsection.3.21.3.3}% 
+\contentsline {subsubsection}{\numberline {3.21.3.4}manageScroll()}{51}{subsubsection.3.21.3.4}% 
+\contentsline {section}{\numberline {3.22}Settings\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Container Class Reference}{51}{section.3.22}% 
+\contentsline {subsection}{\numberline {3.22.1}Detailed Description}{53}{subsection.3.22.1}% 
+\contentsline {subsection}{\numberline {3.22.2}Member Function Documentation}{53}{subsection.3.22.2}% 
+\contentsline {subsubsection}{\numberline {3.22.2.1}colorFromString()}{53}{subsubsection.3.22.2.1}% 
+\contentsline {subsubsection}{\numberline {3.22.2.2}getBotname()}{53}{subsubsection.3.22.2.2}% 
+\contentsline {subsubsection}{\numberline {3.22.2.3}getFont()}{53}{subsubsection.3.22.2.3}% 
+\contentsline {subsubsection}{\numberline {3.22.2.4}getRndIntInRange()}{54}{subsubsection.3.22.2.4}% 
+\contentsline {subsubsection}{\numberline {3.22.2.5}getSessionFile()}{55}{subsubsection.3.22.2.5}% 
+\contentsline {subsubsection}{\numberline {3.22.2.6}getUsername()}{55}{subsubsection.3.22.2.6}% 
+\contentsline {subsubsection}{\numberline {3.22.2.7}initsAvatarFront()}{55}{subsubsection.3.22.2.7}% 
+\contentsline {subsubsection}{\numberline {3.22.2.8}initsButtonFront()}{56}{subsubsection.3.22.2.8}% 
+\contentsline {subsubsection}{\numberline {3.22.2.9}initsFieldFront()}{56}{subsubsection.3.22.2.9}% 
+\contentsline {subsubsection}{\numberline {3.22.2.10}initsSPFront()}{56}{subsubsection.3.22.2.10}% 
+\contentsline {subsubsection}{\numberline {3.22.2.11}readAvatarInitializationFile()}{56}{subsubsection.3.22.2.11}% 
+\contentsline {subsubsection}{\numberline {3.22.2.12}readButtonInitializationFile()}{57}{subsubsection.3.22.2.12}% 
+\contentsline {subsubsection}{\numberline {3.22.2.13}readFieldInitializationFile()}{57}{subsubsection.3.22.2.13}% 
+\contentsline {subsubsection}{\numberline {3.22.2.14}readSpeechBalloonInitializationFile()}{57}{subsubsection.3.22.2.14}% 
+\contentsline {subsubsection}{\numberline {3.22.2.15}setBotname()}{57}{subsubsection.3.22.2.15}% 
+\contentsline {subsubsection}{\numberline {3.22.2.16}setFont()}{58}{subsubsection.3.22.2.16}% 
+\contentsline {subsubsection}{\numberline {3.22.2.17}setSessionFile()}{58}{subsubsection.3.22.2.17}% 
+\contentsline {subsubsection}{\numberline {3.22.2.18}setUsername()}{58}{subsubsection.3.22.2.18}% 
+\contentsline {section}{\numberline {3.23}Settings\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Screen Class Reference}{59}{section.3.23}% 
+\contentsline {section}{\numberline {3.24}Setup\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Screen Class Reference}{59}{section.3.24}% 
+\contentsline {subsection}{\numberline {3.24.1}Detailed Description}{60}{subsection.3.24.1}% 
+\contentsline {subsection}{\numberline {3.24.2}Constructor \& Destructor Documentation}{60}{subsection.3.24.2}% 
+\contentsline {subsubsection}{\numberline {3.24.2.1}SetupScreen()}{60}{subsubsection.3.24.2.1}% 
+\contentsline {subsection}{\numberline {3.24.3}Member Function Documentation}{60}{subsection.3.24.3}% 
+\contentsline {subsubsection}{\numberline {3.24.3.1}draw()}{60}{subsubsection.3.24.3.1}% 
+\contentsline {subsubsection}{\numberline {3.24.3.2}getInstance()}{61}{subsubsection.3.24.3.2}% 
+\contentsline {subsubsection}{\numberline {3.24.3.3}manageKeyboard()}{61}{subsubsection.3.24.3.3}% 
+\contentsline {subsubsection}{\numberline {3.24.3.4}manageMouse()}{61}{subsubsection.3.24.3.4}% 
+\contentsline {subsubsection}{\numberline {3.24.3.5}manageScroll()}{62}{subsubsection.3.24.3.5}% 
+\contentsline {section}{\numberline {3.25}Speech\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Balloon Class Reference}{62}{section.3.25}% 
+\contentsline {subsection}{\numberline {3.25.1}Detailed Description}{63}{subsection.3.25.1}% 
+\contentsline {subsection}{\numberline {3.25.2}Constructor \& Destructor Documentation}{63}{subsection.3.25.2}% 
+\contentsline {subsubsection}{\numberline {3.25.2.1}SpeechBalloon()}{63}{subsubsection.3.25.2.1}% 
+\contentsline {subsection}{\numberline {3.25.3}Member Function Documentation}{63}{subsection.3.25.3}% 
+\contentsline {subsubsection}{\numberline {3.25.3.1}draw()}{64}{subsubsection.3.25.3.1}% 
+\contentsline {subsubsection}{\numberline {3.25.3.2}fillBalloon()}{64}{subsubsection.3.25.3.2}% 
+\contentsline {section}{\numberline {3.26}Speech\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Balloon\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Initializer Struct Reference}{64}{section.3.26}% 
+\contentsline {subsection}{\numberline {3.26.1}Detailed Description}{65}{subsection.3.26.1}% 
+\contentsline {section}{\numberline {3.27}UI Class Reference}{65}{section.3.27}% 
+\contentsline {subsection}{\numberline {3.27.1}Detailed Description}{66}{subsection.3.27.1}% 
+\contentsline {subsection}{\numberline {3.27.2}Constructor \& Destructor Documentation}{66}{subsection.3.27.2}% 
+\contentsline {subsubsection}{\numberline {3.27.2.1}UI()}{66}{subsubsection.3.27.2.1}% 
+\contentsline {subsection}{\numberline {3.27.3}Member Function Documentation}{66}{subsection.3.27.3}% 
+\contentsline {subsubsection}{\numberline {3.27.3.1}changeState()}{66}{subsubsection.3.27.3.1}% 
+\contentsline {subsubsection}{\numberline {3.27.3.2}manageKeyboard()}{66}{subsubsection.3.27.3.2}% 
+\contentsline {subsubsection}{\numberline {3.27.3.3}manageMouse()}{67}{subsubsection.3.27.3.3}% 
+\contentsline {subsubsection}{\numberline {3.27.3.4}manageScroll()}{67}{subsubsection.3.27.3.4}% 
+\contentsline {chapter}{Index}{69}{section*.88}% 

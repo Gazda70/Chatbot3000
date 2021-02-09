@@ -1,0 +1,113 @@
+\hypertarget{class_button}{}\section{Button Class Reference}
+\label{class_button}\index{Button@{Button}}
+
+
+Klasa reprezentująca przycisk oraz pola tekstowe.  
+
+
+
+
+{\ttfamily \#include $<$Button.\+h$>$}
+
+Inheritance diagram for Button\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_button}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_button_aa4d65bb2be09c8c2d4bb5a4739ff2ea7}\label{class_button_aa4d65bb2be09c8c2d4bb5a4739ff2ea7}} 
+bool \mbox{\hyperlink{class_button_aa4d65bb2be09c8c2d4bb5a4739ff2ea7}{contains}} (Vector2f mousepos)
+\begin{DoxyCompactList}\small\item\em metoda sprawdzająca czy dany punkt znajduje się wewnątrz kształtu \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_button_a5f513f9c8fbe24e92fb26e98a32b41a3}{Button}} (float x\+\_\+axis=0.\+0, float y\+\_\+axis=0.\+0, float width=100.\+0, float height=50.\+0, Color color=Color\+::\+Blue, std\+::string text=\char`\"{}Button\char`\"{}, std\+::string name\+Font\+File=\char`\"{}times.\+ttf\char`\"{}, unsigned int text\+Size=15, Color text\+Color=Color\+::\+Black, Vector2f textpos=\{(1.\+5/4.\+0),(1.\+0/4.\+0) \}, Text\+::\+Style text\+Bold=Text\+::\+Style\+::\+Regular, Text\+::\+Style text\+Underline=Text\+::\+Style\+::\+Regular, float outline\+Thick=3.\+0, Color outline\+Color=Color\+::\+Black)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_button_abf226e020dc9ca54d0b564d3549df013}\label{class_button_abf226e020dc9ca54d0b564d3549df013}} 
+void \mbox{\hyperlink{class_button_abf226e020dc9ca54d0b564d3549df013}{manage\+Input}} (Vector2f mousepos)
+\begin{DoxyCompactList}\small\item\em metoda do obsługi informacji z myszki -\/ wciśnięcie klawisza \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_button_a2fe7d7228fb882c5c992ed07341d45be}\label{class_button_a2fe7d7228fb882c5c992ed07341d45be}} 
+void \mbox{\hyperlink{class_button_a2fe7d7228fb882c5c992ed07341d45be}{activate}} ()
+\begin{DoxyCompactList}\small\item\em metoda aktywacji obiektu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_adc3b760f97deceaa28f742a433943815}{sf\+::\+Drawable\+::draw}} (Render\+Target \&window, Render\+States state) const
+\begin{DoxyCompactList}\small\item\em Metoda służacą do wyrysowania obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_button_acda5d84a9dd876f92af6d79e91837fbb}\label{class_button_acda5d84a9dd876f92af6d79e91837fbb}} 
+Rectangle\+Shape \mbox{\hyperlink{class_button_acda5d84a9dd876f92af6d79e91837fbb}{body}}
+\begin{DoxyCompactList}\small\item\em obiekt reprezentujący kształt do wyrysowania \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa reprezentująca przycisk oraz pola tekstowe. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_button_a5f513f9c8fbe24e92fb26e98a32b41a3}\label{class_button_a5f513f9c8fbe24e92fb26e98a32b41a3}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+axis = {\ttfamily 0.0},  }\item[{float}]{y\+\_\+axis = {\ttfamily 0.0},  }\item[{float}]{width = {\ttfamily 100.0},  }\item[{float}]{height = {\ttfamily 50.0},  }\item[{Color}]{color = {\ttfamily Color\+:\+:Blue},  }\item[{std\+::string}]{text = {\ttfamily \char`\"{}Button\char`\"{}},  }\item[{std\+::string}]{name\+Font\+File = {\ttfamily \char`\"{}times.ttf\char`\"{}},  }\item[{unsigned int}]{text\+Size = {\ttfamily 15},  }\item[{Color}]{text\+Color = {\ttfamily Color\+:\+:Black},  }\item[{Vector2f}]{textpos = {\ttfamily \{~(1.5~/~4.0),(1.0~/~4.0)~\}},  }\item[{Text\+::\+Style}]{text\+Bold = {\ttfamily Text\+:\+:Style\+:\+:Regular},  }\item[{Text\+::\+Style}]{text\+Underline = {\ttfamily Text\+:\+:Style\+:\+:Regular},  }\item[{float}]{outline\+Thick = {\ttfamily 3.0},  }\item[{Color}]{outline\+Color = {\ttfamily Color\+:\+:Black} }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+axis} & współrzędna pozioma położenia kształtu \\
+\hline
+{\em y\+\_\+axis} & współrzędna pionowa położenia kształtu \\
+\hline
+{\em width} & szerokość kształtu \\
+\hline
+{\em height} & wysokość kształtu \\
+\hline
+{\em color} & kolor kształtu \\
+\hline
+{\em text} & tekst do wyświetlenia w obrębie kształu \\
+\hline
+{\em name\+Font\+File} & nazwa pliku z czcionką do stworzenia tekstu \\
+\hline
+{\em text\+Size} & rozmiar liter w tekście \\
+\hline
+{\em text\+Color} & kolor tekstu \\
+\hline
+{\em textpos} & wektor z wartościami przez które należy przemnożyć wymiary kształtu by otrzymać położenie tekstu względem kształtu \\
+\hline
+{\em text\+Bold} & określa czy tekst powinien być napisany pogrubioną czcionką \\
+\hline
+{\em text\+Underline} & określa czy tekst powinien być podkreślony \\
+\hline
+{\em outline\+Thick} & określa grubość obwódki kształtu \\
+\hline
+{\em outline\+Color} & określa kolor obwódki kształtu \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_button_adc3b760f97deceaa28f742a433943815}\label{class_button_adc3b760f97deceaa28f742a433943815}} 
+\index{Button@{Button}!sf::Drawable::draw@{sf::Drawable::draw}}
+\index{sf::Drawable::draw@{sf::Drawable::draw}!Button@{Button}}
+\subsubsection{\texorpdfstring{sf::Drawable::draw()}{sf::Drawable::draw()}}
+{\footnotesize\ttfamily void Button\+::sf\+::\+Drawable\+::draw (\begin{DoxyParamCaption}\item[{Render\+Target \&}]{window,  }\item[{Render\+States}]{state }\end{DoxyParamCaption}) const}
+
+
+
+Metoda służacą do wyrysowania obiektu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & obiekt na którym ma być narysowany obiekt \\
+\hline
+{\em state} & stan obiektu do narysowania \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Button.\+h\item 
+Button.\+cpp\end{DoxyCompactItemize}

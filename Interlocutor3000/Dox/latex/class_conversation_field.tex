@@ -1,0 +1,188 @@
+\hypertarget{class_conversation_field}{}\section{Conversation\+Field Class Reference}
+\label{class_conversation_field}\index{ConversationField@{ConversationField}}
+
+
+Klasa odpowiedzialna za obsługę pola konwersacji.  
+
+
+
+
+{\ttfamily \#include $<$Conversation\+Field.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_conversation_field_a0c6e16a94dfb0c1abb0b2c476174a498}{Conversation\+Field}} (float x\+\_\+axis=0.\+0, float y\+\_\+axis=0.\+0, float width=500.\+0, float height=500.\+0, Color color=Color\+::\+Blue)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conversation_field_a292ec090318762b21495ed18f21fb29c}{set\+User\+Avatar}} (std\+::string usersaid, const char $\ast$avatar\+Texture)
+\begin{DoxyCompactList}\small\item\em Metoda ustawiająca awatar użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conversation_field_addb47862af1b984d2fad2d03a1b180b6}{set\+Bot\+Avatar}} (std\+::string botsaid, const char $\ast$avatar\+Texture)
+\begin{DoxyCompactList}\small\item\em Metoda ustawiająca awatar bota. \end{DoxyCompactList}\item 
+Vector2f \mbox{\hyperlink{class_conversation_field_a32d5743cdda7853889f4fd198c8f8c55}{get\+Avatar\+Coords}} (Interlocutors need)
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca bazowe współrzędne położenia awatara bota lub użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conversation_field_a562947edbd37166d1a224cb3a92692ea}{scroll\+View}} (float delta, sf\+::\+View \&my\+View)
+\begin{DoxyCompactList}\small\item\em Metoda przesuwa widok w zależności od użycia scrolla. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conversation_field_addd22a34e52b02b8f27eb59415d81739}\label{class_conversation_field_addd22a34e52b02b8f27eb59415d81739}} 
+void \mbox{\hyperlink{class_conversation_field_addd22a34e52b02b8f27eb59415d81739}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Metoda resetuje zawartość pola konwersacji. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_conversation_field_a4507394fc857ea473c69e75c81b44eb3}{draw\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Metoda rysuje elementy na teksturze a następnie tworzy obiekt klasy Sprite przy użyciu tej tekstury. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conversation_field_ab7d6dfc11246d78a25e5892f4567fcd7}\label{class_conversation_field_ab7d6dfc11246d78a25e5892f4567fcd7}} 
+\mbox{\hyperlink{class_conversation_field_ab7d6dfc11246d78a25e5892f4567fcd7}{$\sim$\+Conversation\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor, zwalnia zaalokowaną dynamicznie pamięć \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_conversation_field_af099ef6913a8a34e88a8b055aa7ba219}\label{class_conversation_field_af099ef6913a8a34e88a8b055aa7ba219}} 
+void \mbox{\hyperlink{class_conversation_field_af099ef6913a8a34e88a8b055aa7ba219}{draw\+Avatars}} () const
+\begin{DoxyCompactList}\small\item\em Metoda służąca do narysowania awatarów na teksturze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_conversation_field_a6af6b93de400ad597ceeb6b8f0b42513}\label{class_conversation_field_a6af6b93de400ad597ceeb6b8f0b42513}} 
+\mbox{\hyperlink{struct_avatar_initializer}{Avatar\+Initializer}} \mbox{\hyperlink{class_conversation_field_a6af6b93de400ad597ceeb6b8f0b42513}{init}}
+\begin{DoxyCompactList}\small\item\em Struktura zawierająca informacje do inicjalizacji awatara. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conversation_field_a91e0b7456422a0684bd6b4bf65decfe8}\label{class_conversation_field_a91e0b7456422a0684bd6b4bf65decfe8}} 
+std\+::vector$<$ \mbox{\hyperlink{class_avatar}{Avatar}} $\ast$ $>$ \mbox{\hyperlink{class_conversation_field_a91e0b7456422a0684bd6b4bf65decfe8}{user\+Instances}}
+\begin{DoxyCompactList}\small\item\em Wektor instancji awatara użytkownika, każda odpowiada jednej wiadomości. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conversation_field_ae6b331994316ac01b66e8f79a8d2439e}\label{class_conversation_field_ae6b331994316ac01b66e8f79a8d2439e}} 
+std\+::vector$<$ \mbox{\hyperlink{class_avatar}{Avatar}} $\ast$ $>$ \mbox{\hyperlink{class_conversation_field_ae6b331994316ac01b66e8f79a8d2439e}{bot\+Instances}}
+\begin{DoxyCompactList}\small\item\em Wektor instancji awatara bota, każda odpowiada jednej wiadomości. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conversation_field_a5c8b703113dd5fc69f0421bc3b8650b7}\label{class_conversation_field_a5c8b703113dd5fc69f0421bc3b8650b7}} 
+sf\+::\+Render\+Texture $\ast$ \mbox{\hyperlink{class_conversation_field_a5c8b703113dd5fc69f0421bc3b8650b7}{field}}
+\begin{DoxyCompactList}\small\item\em Tekstura na której narysowane zostają awatary i dymki czatu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conversation_field_ac648969d6558c7a70ff96de5ea6a3a29}\label{class_conversation_field_ac648969d6558c7a70ff96de5ea6a3a29}} 
+float \mbox{\hyperlink{class_conversation_field_ac648969d6558c7a70ff96de5ea6a3a29}{fieldX}}
+\begin{DoxyCompactList}\small\item\em Szerokość tekstury. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conversation_field_ad2c2b91934444d1422bebb5c21e1c51d}\label{class_conversation_field_ad2c2b91934444d1422bebb5c21e1c51d}} 
+float \mbox{\hyperlink{class_conversation_field_ad2c2b91934444d1422bebb5c21e1c51d}{fieldY}}
+\begin{DoxyCompactList}\small\item\em Wysokość tekstury. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conversation_field_ac83f8ff2b1715a8cb1ae3e3373b1615c}\label{class_conversation_field_ac83f8ff2b1715a8cb1ae3e3373b1615c}} 
+std\+::string \mbox{\hyperlink{class_conversation_field_ac83f8ff2b1715a8cb1ae3e3373b1615c}{username}}
+\begin{DoxyCompactList}\small\item\em Nazwa użytkownika. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conversation_field_a3e012205623a28b86f1a9caf4f14a2eb}\label{class_conversation_field_a3e012205623a28b86f1a9caf4f14a2eb}} 
+std\+::string \mbox{\hyperlink{class_conversation_field_a3e012205623a28b86f1a9caf4f14a2eb}{botname}}
+\begin{DoxyCompactList}\small\item\em Nazwa bota. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_conversation_field_aa280b82099e4ba6326cb2a9aced39a2d}\label{class_conversation_field_aa280b82099e4ba6326cb2a9aced39a2d}} 
+float \mbox{\hyperlink{class_conversation_field_aa280b82099e4ba6326cb2a9aced39a2d}{scroll\+Offset}}
+\begin{DoxyCompactList}\small\item\em Przesunięcie spowodowane scrollowaniem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa odpowiedzialna za obsługę pola konwersacji. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_conversation_field_a0c6e16a94dfb0c1abb0b2c476174a498}\label{class_conversation_field_a0c6e16a94dfb0c1abb0b2c476174a498}} 
+\index{ConversationField@{ConversationField}!ConversationField@{ConversationField}}
+\index{ConversationField@{ConversationField}!ConversationField@{ConversationField}}
+\subsubsection{\texorpdfstring{ConversationField()}{ConversationField()}}
+{\footnotesize\ttfamily Conversation\+Field\+::\+Conversation\+Field (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+axis = {\ttfamily 0.0},  }\item[{float}]{y\+\_\+axis = {\ttfamily 0.0},  }\item[{float}]{width = {\ttfamily 500.0},  }\item[{float}]{height = {\ttfamily 500.0},  }\item[{Color}]{color = {\ttfamily Color\+:\+:Blue} }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+axis} & współrzędna pozioma położenia kształtu \\
+\hline
+{\em y\+\_\+axis} & współrzędna pionowa położenia kształtu \\
+\hline
+{\em width} & szerokość kształtu \\
+\hline
+{\em height} & wysokość kształtu \\
+\hline
+{\em color} & kolor kształtu \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_conversation_field_a4507394fc857ea473c69e75c81b44eb3}\label{class_conversation_field_a4507394fc857ea473c69e75c81b44eb3}} 
+\index{ConversationField@{ConversationField}!drawField@{drawField}}
+\index{drawField@{drawField}!ConversationField@{ConversationField}}
+\subsubsection{\texorpdfstring{drawField()}{drawField()}}
+{\footnotesize\ttfamily sf\+::\+Sprite Conversation\+Field\+::draw\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda rysuje elementy na teksturze a następnie tworzy obiekt klasy Sprite przy użyciu tej tekstury. 
+
+\begin{DoxyReturn}{Returns}
+sprite utworzony z tekstury 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_conversation_field_a32d5743cdda7853889f4fd198c8f8c55}\label{class_conversation_field_a32d5743cdda7853889f4fd198c8f8c55}} 
+\index{ConversationField@{ConversationField}!getAvatarCoords@{getAvatarCoords}}
+\index{getAvatarCoords@{getAvatarCoords}!ConversationField@{ConversationField}}
+\subsubsection{\texorpdfstring{getAvatarCoords()}{getAvatarCoords()}}
+{\footnotesize\ttfamily Vector2f Conversation\+Field\+::get\+Avatar\+Coords (\begin{DoxyParamCaption}\item[{Interlocutors}]{need }\end{DoxyParamCaption})}
+
+
+
+Metoda zwracająca bazowe współrzędne położenia awatara bota lub użytkownika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em need} & określa czy zwrócić wartości dla użytkownika czy bota \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bazowe współrzędne dla odpowiedniego awatara 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_conversation_field_a562947edbd37166d1a224cb3a92692ea}\label{class_conversation_field_a562947edbd37166d1a224cb3a92692ea}} 
+\index{ConversationField@{ConversationField}!scrollView@{scrollView}}
+\index{scrollView@{scrollView}!ConversationField@{ConversationField}}
+\subsubsection{\texorpdfstring{scrollView()}{scrollView()}}
+{\footnotesize\ttfamily void Conversation\+Field\+::scroll\+View (\begin{DoxyParamCaption}\item[{float}]{delta,  }\item[{sf\+::\+View \&}]{my\+View }\end{DoxyParamCaption})}
+
+
+
+Metoda przesuwa widok w zależności od użycia scrolla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & przesunięcie widoku \\
+\hline
+{\em my\+View} & obiekt reprezentujący widok \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_conversation_field_addb47862af1b984d2fad2d03a1b180b6}\label{class_conversation_field_addb47862af1b984d2fad2d03a1b180b6}} 
+\index{ConversationField@{ConversationField}!setBotAvatar@{setBotAvatar}}
+\index{setBotAvatar@{setBotAvatar}!ConversationField@{ConversationField}}
+\subsubsection{\texorpdfstring{setBotAvatar()}{setBotAvatar()}}
+{\footnotesize\ttfamily void Conversation\+Field\+::set\+Bot\+Avatar (\begin{DoxyParamCaption}\item[{std\+::string}]{botsaid,  }\item[{const char $\ast$}]{avatar\+Texture }\end{DoxyParamCaption})}
+
+
+
+Metoda ustawiająca awatar bota. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em botsaid} & wiadomość do wyświetlenia w dymku czatu \\
+\hline
+{\em avatar\+Texture} & tekstura do określenia awatara \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_conversation_field_a292ec090318762b21495ed18f21fb29c}\label{class_conversation_field_a292ec090318762b21495ed18f21fb29c}} 
+\index{ConversationField@{ConversationField}!setUserAvatar@{setUserAvatar}}
+\index{setUserAvatar@{setUserAvatar}!ConversationField@{ConversationField}}
+\subsubsection{\texorpdfstring{setUserAvatar()}{setUserAvatar()}}
+{\footnotesize\ttfamily void Conversation\+Field\+::set\+User\+Avatar (\begin{DoxyParamCaption}\item[{std\+::string}]{usersaid,  }\item[{const char $\ast$}]{avatar\+Texture }\end{DoxyParamCaption})}
+
+
+
+Metoda ustawiająca awatar użytkownika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em usersaid} & wiadomość do wyświetlenia w dymku czatu \\
+\hline
+{\em avatar\+Texture} & tekstura do określenia awatara \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Conversation\+Field.\+h\item 
+Conversation\+Field.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{class_speech_balloon}{}\section{Speech\+Balloon Class Reference}
+\label{class_speech_balloon}\index{SpeechBalloon@{SpeechBalloon}}
+
+
+Klasa reprezentująca dymek czatu.  
+
+
+
+
+{\ttfamily \#include $<$Speech\+Balloon.\+h$>$}
+
+Inheritance diagram for Speech\+Balloon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_speech_balloon}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_speech_balloon_a072b0566250dac05537d0567e5bd0796}{Speech\+Balloon}} (Vector2f position, sf\+::\+String my\+Speech, const char $\ast$texture\+File)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speech_balloon_ad73057bdf7d7fe0817612f32a7765c69}{fill\+Balloon}} (sf\+::\+String written, sf\+::\+Vector2f start\+Pos)
+\begin{DoxyCompactList}\small\item\em fill\+Ballooon \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speech_balloon_afcbae5782428b8aa53dbd544863a15e9}{draw}} (Render\+Target \&window, Render\+States state) const
+\begin{DoxyCompactList}\small\item\em Metoda służacą do wyrysowania obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_speech_balloon_a4061d91b21a43be80f77c5667e10291b}\label{class_speech_balloon_a4061d91b21a43be80f77c5667e10291b}} 
+Texture \mbox{\hyperlink{class_speech_balloon_a4061d91b21a43be80f77c5667e10291b}{balloon\+Texture}}
+\begin{DoxyCompactList}\small\item\em Tekstura dymku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_speech_balloon_ad6061cd595ce62e2a6adb2db347cead5}\label{class_speech_balloon_ad6061cd595ce62e2a6adb2db347cead5}} 
+Sprite \mbox{\hyperlink{class_speech_balloon_ad6061cd595ce62e2a6adb2db347cead5}{balloon\+Sprite}}
+\begin{DoxyCompactList}\small\item\em Obiekt klasy sprite będący graficzną reprezentacją dymku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa reprezentująca dymek czatu. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_speech_balloon_a072b0566250dac05537d0567e5bd0796}\label{class_speech_balloon_a072b0566250dac05537d0567e5bd0796}} 
+\index{SpeechBalloon@{SpeechBalloon}!SpeechBalloon@{SpeechBalloon}}
+\index{SpeechBalloon@{SpeechBalloon}!SpeechBalloon@{SpeechBalloon}}
+\subsubsection{\texorpdfstring{SpeechBalloon()}{SpeechBalloon()}}
+{\footnotesize\ttfamily Speech\+Balloon\+::\+Speech\+Balloon (\begin{DoxyParamCaption}\item[{Vector2f}]{position,  }\item[{sf\+::\+String}]{my\+Speech,  }\item[{const char $\ast$}]{texture\+File }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & pozycja dymku \\
+\hline
+{\em my\+Speech} & tekst do wyświetlenia w dymku \\
+\hline
+{\em nazwa} & pliku z teksturą \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_speech_balloon_afcbae5782428b8aa53dbd544863a15e9}\label{class_speech_balloon_afcbae5782428b8aa53dbd544863a15e9}} 
+\index{SpeechBalloon@{SpeechBalloon}!draw@{draw}}
+\index{draw@{draw}!SpeechBalloon@{SpeechBalloon}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Speech\+Balloon\+::draw (\begin{DoxyParamCaption}\item[{Render\+Target \&}]{window,  }\item[{Render\+States}]{state }\end{DoxyParamCaption}) const}
+
+
+
+Metoda służacą do wyrysowania obiektu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & obiekt na którym ma być narysowany obiekt \\
+\hline
+{\em state} & stan obiektu do narysowania \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_speech_balloon_ad73057bdf7d7fe0817612f32a7765c69}\label{class_speech_balloon_ad73057bdf7d7fe0817612f32a7765c69}} 
+\index{SpeechBalloon@{SpeechBalloon}!fillBalloon@{fillBalloon}}
+\index{fillBalloon@{fillBalloon}!SpeechBalloon@{SpeechBalloon}}
+\subsubsection{\texorpdfstring{fillBalloon()}{fillBalloon()}}
+{\footnotesize\ttfamily void Speech\+Balloon\+::fill\+Balloon (\begin{DoxyParamCaption}\item[{sf\+::\+String}]{written,  }\item[{sf\+::\+Vector2f}]{start\+Pos }\end{DoxyParamCaption})}
+
+
+
+fill\+Ballooon 
+
+
+\begin{DoxyParams}{Parameters}
+{\em written} & tekst do wyświetlenia w dymku \\
+\hline
+{\em start\+Pos} & pozycja początkowa tekstu \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Speech\+Balloon.\+h\item 
+Speech\+Balloon.\+cpp\end{DoxyCompactItemize}

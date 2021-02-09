@@ -1,0 +1,156 @@
+\hypertarget{class_screen}{}\section{Screen Class Reference}
+\label{class_screen}\index{Screen@{Screen}}
+
+
+Klasa abstrakcyjna zapewniająca interfejs do obsługi scen interfejsu.  
+
+
+
+
+{\ttfamily \#include $<$Screen.\+h$>$}
+
+Inheritance diagram for Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_screen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_ae7576476fc6e6a6eaa66389fdc41fe72}\label{class_screen_ae7576476fc6e6a6eaa66389fdc41fe72}} 
+\mbox{\hyperlink{class_screen_ae7576476fc6e6a6eaa66389fdc41fe72}{Screen}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezargumentowy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_screen_a1da1a362bfe70dad75bfc610af0fd001}{Screen}} (double mywidth, double myheight)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+virtual U\+I\+State \mbox{\hyperlink{class_screen_aee89e0a473a855ddd0ae9cd38c5f2529}{manage\+Mouse}} (Vector2f mousepos)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda do obsługi myszki -\/ naciśniecie klawisza. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_screen_a5b385381d2ba942567f4317e916c9951}{manage\+Keyboard}} (sf\+::\+Uint32 entered)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda do obsługi klawiatury. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_screen_a039b9d63b0afafff7af22c26e2d81f5e}{manage\+Scroll}} (float delta)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda do obsługi myszki -\/ naciśniecie klawisza. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_screen_ab9f74bb4bf0d0ee2a8280354ba0ff85e}{draw}} (Render\+Target \&target, Render\+States states)=0
+\begin{DoxyCompactList}\small\item\em Metoda służacą do wyrysowania obiektu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_screen_a4243bc17596af96415b09ac48205676d}\label{class_screen_a4243bc17596af96415b09ac48205676d}} 
+virtual \mbox{\hyperlink{class_screen_a4243bc17596af96415b09ac48205676d}{$\sim$\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em wirtualny destruktor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_aa3f00a200859204999068aa8a1fbc2e1}\label{class_screen_aa3f00a200859204999068aa8a1fbc2e1}} 
+double \mbox{\hyperlink{class_screen_aa3f00a200859204999068aa8a1fbc2e1}{width}}
+\begin{DoxyCompactList}\small\item\em Szerokość sceny. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_screen_a608a5e1be378a6a05d341296707d2f8f}\label{class_screen_a608a5e1be378a6a05d341296707d2f8f}} 
+double \mbox{\hyperlink{class_screen_a608a5e1be378a6a05d341296707d2f8f}{height}}
+\begin{DoxyCompactList}\small\item\em Wysokość sceny. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa abstrakcyjna zapewniająca interfejs do obsługi scen interfejsu. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_screen_a1da1a362bfe70dad75bfc610af0fd001}\label{class_screen_a1da1a362bfe70dad75bfc610af0fd001}} 
+\index{Screen@{Screen}!Screen@{Screen}}
+\index{Screen@{Screen}!Screen@{Screen}}
+\subsubsection{\texorpdfstring{Screen()}{Screen()}}
+{\footnotesize\ttfamily Screen\+::\+Screen (\begin{DoxyParamCaption}\item[{double}]{mywidth,  }\item[{double}]{myheight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mywidth} & szerokość sceny \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_screen_ab9f74bb4bf0d0ee2a8280354ba0ff85e}\label{class_screen_ab9f74bb4bf0d0ee2a8280354ba0ff85e}} 
+\index{Screen@{Screen}!draw@{draw}}
+\index{draw@{draw}!Screen@{Screen}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Screen\+::draw (\begin{DoxyParamCaption}\item[{Render\+Target \&}]{target,  }\item[{Render\+States}]{states }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Metoda służacą do wyrysowania obiektu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & obiekt na którym ma być narysowany obiekt \\
+\hline
+{\em state} & stan obiektu do narysowania \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_chat_screen_a87d8380e53cb84494ff03dd10f6d279c}{Chat\+Screen}}, \mbox{\hyperlink{class_begin_screen_a891ea875427d812284dce3ceb83839bc}{Begin\+Screen}}, \mbox{\hyperlink{class_setup_screen_a64ca86c7735fa3fc900cc0d5466c2d53}{Setup\+Screen}}, and \mbox{\hyperlink{class_main_screen_a4869b4bcd4bc03ef503904395bc4e68b}{Main\+Screen}}.
+
+\mbox{\Hypertarget{class_screen_a5b385381d2ba942567f4317e916c9951}\label{class_screen_a5b385381d2ba942567f4317e916c9951}} 
+\index{Screen@{Screen}!manageKeyboard@{manageKeyboard}}
+\index{manageKeyboard@{manageKeyboard}!Screen@{Screen}}
+\subsubsection{\texorpdfstring{manageKeyboard()}{manageKeyboard()}}
+{\footnotesize\ttfamily virtual void Screen\+::manage\+Keyboard (\begin{DoxyParamCaption}\item[{sf\+::\+Uint32}]{entered }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Wirtualna metoda do obsługi klawiatury. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entered} & kod wciśniętego klawisza \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_chat_screen_a1ab966165fc054af7c623e75e66c29c5}{Chat\+Screen}}, \mbox{\hyperlink{class_begin_screen_a7f35b82f9f7ecceb5d45a33298812285}{Begin\+Screen}}, \mbox{\hyperlink{class_setup_screen_ac1b4b500907cf569e58a6a98f082e8d2}{Setup\+Screen}}, and \mbox{\hyperlink{class_main_screen_ac0e2f8d06e1a7fef07d52730b94132d3}{Main\+Screen}}.
+
+\mbox{\Hypertarget{class_screen_aee89e0a473a855ddd0ae9cd38c5f2529}\label{class_screen_aee89e0a473a855ddd0ae9cd38c5f2529}} 
+\index{Screen@{Screen}!manageMouse@{manageMouse}}
+\index{manageMouse@{manageMouse}!Screen@{Screen}}
+\subsubsection{\texorpdfstring{manageMouse()}{manageMouse()}}
+{\footnotesize\ttfamily virtual U\+I\+State Screen\+::manage\+Mouse (\begin{DoxyParamCaption}\item[{Vector2f}]{mousepos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Wirtualna metoda do obsługi myszki -\/ naciśniecie klawisza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mousepos} & położenie myszki \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stan interfejsu wynikający z położenia myszki przy kliknięciu 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_chat_screen_a0367fc37c8e860bc044915b9d8b78682}{Chat\+Screen}}, \mbox{\hyperlink{class_begin_screen_a49b4b67234a8f16d7aa6ba0f0ec982a2}{Begin\+Screen}}, \mbox{\hyperlink{class_setup_screen_a0057c82efae24568d4867558fa66167d}{Setup\+Screen}}, and \mbox{\hyperlink{class_main_screen_a767f261da366524c32b687b4cce0e85c}{Main\+Screen}}.
+
+\mbox{\Hypertarget{class_screen_a039b9d63b0afafff7af22c26e2d81f5e}\label{class_screen_a039b9d63b0afafff7af22c26e2d81f5e}} 
+\index{Screen@{Screen}!manageScroll@{manageScroll}}
+\index{manageScroll@{manageScroll}!Screen@{Screen}}
+\subsubsection{\texorpdfstring{manageScroll()}{manageScroll()}}
+{\footnotesize\ttfamily virtual void Screen\+::manage\+Scroll (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Wirtualna metoda do obsługi myszki -\/ naciśniecie klawisza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & przesunięcie widoku \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_chat_screen_abd1fd89f6ecc5ddbc233a04e571de9be}{Chat\+Screen}}, \mbox{\hyperlink{class_begin_screen_aa105e5520474e8d9eb1f108cf736967b}{Begin\+Screen}}, \mbox{\hyperlink{class_setup_screen_af1374ba49c48b6b4a832b54422851e5d}{Setup\+Screen}}, and \mbox{\hyperlink{class_main_screen_a54826570ce34b97e35f89fdc90b98bed}{Main\+Screen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Screen.\+h\item 
+Screen.\+cpp\end{DoxyCompactItemize}

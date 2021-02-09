@@ -1,0 +1,3 @@
+name:Type name x:0.375 y:0.125 w:0.25 h:0.1875 color:White font:times.ttf textsize:0.04375 textcolor:Black textx:0.25 texty:0.25
+name:Initiate x:0.28125 y:0.375 w:0.4375 h:0.125 color:Cyan font:times.ttf textsize:0.04375 textcolor:Blue textx:0.4 texty:0.25
+name:Back x:0.28125 y:0.5625 w:0.4375 h:0.125 color:Cyan font:times.ttf textsize:0.04375 textcolor:Blue textx:0.425 texty:0.25

@@ -1,0 +1,178 @@
+\hypertarget{class_setup_screen}{}\section{Setup\+Screen Class Reference}
+\label{class_setup_screen}\index{SetupScreen@{SetupScreen}}
+
+
+Klasa do utworzenia i obsługi sceny interfejsu z wyborem nazwy użytkownika.  
+
+
+
+
+{\ttfamily \#include $<$Setup\+Screen.\+h$>$}
+
+Inheritance diagram for Setup\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_setup_screen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+State \mbox{\hyperlink{class_setup_screen_a0057c82efae24568d4867558fa66167d}{manage\+Mouse}} (Vector2f mousepos) override
+\begin{DoxyCompactList}\small\item\em Metoda do obsługi myszki -\/ naciśniecie klawisza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_setup_screen_ac1b4b500907cf569e58a6a98f082e8d2}{manage\+Keyboard}} (sf\+::\+Uint32 entered) override
+\begin{DoxyCompactList}\small\item\em Metoda do obsługi klawiatury. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_setup_screen_af1374ba49c48b6b4a832b54422851e5d}{manage\+Scroll}} (float delta)
+\begin{DoxyCompactList}\small\item\em Metoda do obsługi myszki -\/ użycie koła myszki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_setup_screen_a64ca86c7735fa3fc900cc0d5466c2d53}{draw}} (Render\+Target \&target, Render\+States states)
+\begin{DoxyCompactList}\small\item\em Metoda służacą do wyrysowania obiektu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_setup_screen_ad823782ae1c813944f02da4f01e071ff}\label{class_setup_screen_ad823782ae1c813944f02da4f01e071ff}} 
+\mbox{\hyperlink{class_setup_screen_ad823782ae1c813944f02da4f01e071ff}{$\sim$\+Setup\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor, zwalnia zaalokowaną dynamicznie pamięć \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_setup_screen}{Setup\+Screen}} $\ast$ \mbox{\hyperlink{class_setup_screen_aa107ca15f6dee4a39b59c993e919cc56}{get\+Instance}} (double mywidth, double myheight)
+\begin{DoxyCompactList}\small\item\em Metoda do uzyskiwania dostępu do instancji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_setup_screen_a7e68549c089321932b410f829d82d157}{Setup\+Screen}} (double mywidth, double myheight)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_setup_screen_a26943719234aa28944cbd999c887887a}\label{class_setup_screen_a26943719234aa28944cbd999c887887a}} 
+\mbox{\hyperlink{class_button}{Button}} $\ast$ \mbox{\hyperlink{class_setup_screen_a26943719234aa28944cbd999c887887a}{setupscreen}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica do przechowywania elementów interfejsu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa do utworzenia i obsługi sceny interfejsu z wyborem nazwy użytkownika. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_setup_screen_a7e68549c089321932b410f829d82d157}\label{class_setup_screen_a7e68549c089321932b410f829d82d157}} 
+\index{SetupScreen@{SetupScreen}!SetupScreen@{SetupScreen}}
+\index{SetupScreen@{SetupScreen}!SetupScreen@{SetupScreen}}
+\subsubsection{\texorpdfstring{SetupScreen()}{SetupScreen()}}
+{\footnotesize\ttfamily Setup\+Screen\+::\+Setup\+Screen (\begin{DoxyParamCaption}\item[{double}]{mywidth,  }\item[{double}]{myheight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mywidth} & szerokość \\
+\hline
+{\em myheight} & wysokość \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_setup_screen_a64ca86c7735fa3fc900cc0d5466c2d53}\label{class_setup_screen_a64ca86c7735fa3fc900cc0d5466c2d53}} 
+\index{SetupScreen@{SetupScreen}!draw@{draw}}
+\index{draw@{draw}!SetupScreen@{SetupScreen}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Setup\+Screen\+::draw (\begin{DoxyParamCaption}\item[{Render\+Target \&}]{target,  }\item[{Render\+States}]{states }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda służacą do wyrysowania obiektu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & obiekt na którym ma być narysowany obiekt \\
+\hline
+{\em state} & stan obiektu do narysowania \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_ab9f74bb4bf0d0ee2a8280354ba0ff85e}{Screen}}.
+
+\mbox{\Hypertarget{class_setup_screen_aa107ca15f6dee4a39b59c993e919cc56}\label{class_setup_screen_aa107ca15f6dee4a39b59c993e919cc56}} 
+\index{SetupScreen@{SetupScreen}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!SetupScreen@{SetupScreen}}
+\subsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_setup_screen}{Setup\+Screen}} $\ast$ Setup\+Screen\+::get\+Instance (\begin{DoxyParamCaption}\item[{double}]{mywidth,  }\item[{double}]{myheight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metoda do uzyskiwania dostępu do instancji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mywidth} & szerokość \\
+\hline
+{\em myheight} & wysokość \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_setup_screen_ac1b4b500907cf569e58a6a98f082e8d2}\label{class_setup_screen_ac1b4b500907cf569e58a6a98f082e8d2}} 
+\index{SetupScreen@{SetupScreen}!manageKeyboard@{manageKeyboard}}
+\index{manageKeyboard@{manageKeyboard}!SetupScreen@{SetupScreen}}
+\subsubsection{\texorpdfstring{manageKeyboard()}{manageKeyboard()}}
+{\footnotesize\ttfamily void Setup\+Screen\+::manage\+Keyboard (\begin{DoxyParamCaption}\item[{sf\+::\+Uint32}]{entered }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Metoda do obsługi klawiatury. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entered} & kod wciśniętego klawisza \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_a5b385381d2ba942567f4317e916c9951}{Screen}}.
+
+\mbox{\Hypertarget{class_setup_screen_a0057c82efae24568d4867558fa66167d}\label{class_setup_screen_a0057c82efae24568d4867558fa66167d}} 
+\index{SetupScreen@{SetupScreen}!manageMouse@{manageMouse}}
+\index{manageMouse@{manageMouse}!SetupScreen@{SetupScreen}}
+\subsubsection{\texorpdfstring{manageMouse()}{manageMouse()}}
+{\footnotesize\ttfamily U\+I\+State Setup\+Screen\+::manage\+Mouse (\begin{DoxyParamCaption}\item[{Vector2f}]{mousepos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Metoda do obsługi myszki -\/ naciśniecie klawisza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mousepos} & położenie myszki \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stan interfejsu wynikający z położenia myszki przy kliknięciu 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_screen_aee89e0a473a855ddd0ae9cd38c5f2529}{Screen}}.
+
+\mbox{\Hypertarget{class_setup_screen_af1374ba49c48b6b4a832b54422851e5d}\label{class_setup_screen_af1374ba49c48b6b4a832b54422851e5d}} 
+\index{SetupScreen@{SetupScreen}!manageScroll@{manageScroll}}
+\index{manageScroll@{manageScroll}!SetupScreen@{SetupScreen}}
+\subsubsection{\texorpdfstring{manageScroll()}{manageScroll()}}
+{\footnotesize\ttfamily void Setup\+Screen\+::manage\+Scroll (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Metoda do obsługi myszki -\/ użycie koła myszki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & przesunięcie widoku \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_a039b9d63b0afafff7af22c26e2d81f5e}{Screen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Setup\+Screen.\+h\item 
+Setup\+Screen.\+cpp\end{DoxyCompactItemize}

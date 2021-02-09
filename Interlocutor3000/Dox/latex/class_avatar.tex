@@ -1,0 +1,108 @@
+\hypertarget{class_avatar}{}\section{Avatar Class Reference}
+\label{class_avatar}\index{Avatar@{Avatar}}
+
+
+Klasa reprezentująca awatary używane w konwersacji przez program i użytkownika.  
+
+
+
+
+{\ttfamily \#include $<$Avatar.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_avatar_a87b9b3bc44f22472586f9c5a3d126d64}{Avatar}} (Vector2f location, const char $\ast$text\+File, std\+::string name)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avatar_aff381fb315c192aa9c39030d7e722618}{set\+Balloon}} (Vector2f position, std\+::string my\+Speech, const char $\ast$texture\+File)
+\begin{DoxyCompactList}\small\item\em Metoda służąca do ustawienia dymku tekstu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_avatar_a373c93acbda24b8fcc24919876d28932}{draw}} (Render\+Target \&target, Render\+States state) const
+\begin{DoxyCompactList}\small\item\em Metoda służacą do wyrysowania obiektu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avatar_a0d6504f2cb45987ebfcd8736d553ec0d}\label{class_avatar_a0d6504f2cb45987ebfcd8736d553ec0d}} 
+\mbox{\hyperlink{class_avatar_a0d6504f2cb45987ebfcd8736d553ec0d}{$\sim$\+Avatar}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor odpowiadający za zwolnienie dynamicznie zaalokowanej pamięci. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_avatar_a60467d688d94476f4306caea963b3023}\label{class_avatar_a60467d688d94476f4306caea963b3023}} 
+\mbox{\hyperlink{class_speech_balloon}{Speech\+Balloon}} $\ast$ \mbox{\hyperlink{class_avatar_a60467d688d94476f4306caea963b3023}{avatar\+\_\+balloon}}
+\begin{DoxyCompactList}\small\item\em Obiekt klasy Speech\+Ballon reprezentujący dymek tekstu w którym wyświetlane są wiadomości. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avatar_a275b3a29f2d8ddc19911bd2fb875a074}\label{class_avatar_a275b3a29f2d8ddc19911bd2fb875a074}} 
+Texture \mbox{\hyperlink{class_avatar_a275b3a29f2d8ddc19911bd2fb875a074}{texture}}
+\begin{DoxyCompactList}\small\item\em Tekstura określająca wygląd awatara. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avatar_a82d4ed2e9a1984dafbbe67ba06b006c7}\label{class_avatar_a82d4ed2e9a1984dafbbe67ba06b006c7}} 
+Sprite \mbox{\hyperlink{class_avatar_a82d4ed2e9a1984dafbbe67ba06b006c7}{my\+Look}}
+\begin{DoxyCompactList}\small\item\em Sprite określający wygląd awatara. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_avatar_a01c53f093f9a0cd858be2ad68770fec5}\label{class_avatar_a01c53f093f9a0cd858be2ad68770fec5}} 
+Text \mbox{\hyperlink{class_avatar_a01c53f093f9a0cd858be2ad68770fec5}{my\+Name}}
+\begin{DoxyCompactList}\small\item\em Nazwa awatara. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa reprezentująca awatary używane w konwersacji przez program i użytkownika. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_avatar_a87b9b3bc44f22472586f9c5a3d126d64}\label{class_avatar_a87b9b3bc44f22472586f9c5a3d126d64}} 
+\index{Avatar@{Avatar}!Avatar@{Avatar}}
+\index{Avatar@{Avatar}!Avatar@{Avatar}}
+\subsubsection{\texorpdfstring{Avatar()}{Avatar()}}
+{\footnotesize\ttfamily Avatar\+::\+Avatar (\begin{DoxyParamCaption}\item[{Vector2f}]{location,  }\item[{const char $\ast$}]{text\+File,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & wektor określający położenie awatara \\
+\hline
+{\em text\+File} & plik tekstury która ma być użyta dla danej instancji \\
+\hline
+{\em name} & nazwa parametru \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_avatar_a373c93acbda24b8fcc24919876d28932}\label{class_avatar_a373c93acbda24b8fcc24919876d28932}} 
+\index{Avatar@{Avatar}!draw@{draw}}
+\index{draw@{draw}!Avatar@{Avatar}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Avatar\+::draw (\begin{DoxyParamCaption}\item[{Render\+Target \&}]{target,  }\item[{Render\+States}]{state }\end{DoxyParamCaption}) const}
+
+
+
+Metoda służacą do wyrysowania obiektu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & obiekt na którym ma być narysowany obiekt \\
+\hline
+{\em state} & stan obiektu do narysowania \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_avatar_aff381fb315c192aa9c39030d7e722618}\label{class_avatar_aff381fb315c192aa9c39030d7e722618}} 
+\index{Avatar@{Avatar}!setBalloon@{setBalloon}}
+\index{setBalloon@{setBalloon}!Avatar@{Avatar}}
+\subsubsection{\texorpdfstring{setBalloon()}{setBalloon()}}
+{\footnotesize\ttfamily void Avatar\+::set\+Balloon (\begin{DoxyParamCaption}\item[{Vector2f}]{position,  }\item[{std\+::string}]{my\+Speech,  }\item[{const char $\ast$}]{texture\+File }\end{DoxyParamCaption})}
+
+
+
+Metoda służąca do ustawienia dymku tekstu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & wektor określający położenie dymku \\
+\hline
+{\em my\+Speech} & łańcuch znaków reprezentujący informację mającą być wyświetloną w dymku \\
+\hline
+{\em texture\+File} & nazwa pliku tekstury określającej wygląd dymku \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Avatar.\+h\item 
+Avatar.\+cpp\end{DoxyCompactItemize}

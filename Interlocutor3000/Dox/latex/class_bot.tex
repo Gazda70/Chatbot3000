@@ -1,0 +1,135 @@
+\hypertarget{class_bot}{}\section{Bot Class Reference}
+\label{class_bot}\index{Bot@{Bot}}
+
+
+Klasa implementująca algorytm wyboru odpowiedzi.  
+
+
+
+
+{\ttfamily \#include $<$Bot.\+h$>$}
+
+Inheritance diagram for Bot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bot}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bot_acb9b548aa6e08f45ed1d99a7093fac41}\label{class_bot_acb9b548aa6e08f45ed1d99a7093fac41}} 
+\mbox{\hyperlink{class_bot_acb9b548aa6e08f45ed1d99a7093fac41}{Bot}} ()=default
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bot_adc90e9f8e85c06332324ccf3fb851cca}{add\+To\+Base}} (string \&name, vector$<$ string $>$ \&actual\+Response, vector$<$ pair$<$ string, int $>$$>$ \&associated\+Words)
+\begin{DoxyCompactList}\small\item\em Metoda dodająca nowy obiekt reprezentujący kategorię odpowiedzi do bazy lub wzbogacająca istniejący obiekt o nowe skojarzone z nim słowa. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_category}{Category}} $>$\+::iterator \& \mbox{\hyperlink{class_bot_a6c542b51a3b65415f696a0b60cf877d8}{find\+Class\+In\+Base}} (string name, vector$<$ \mbox{\hyperlink{class_category}{Category}} $>$\+::iterator \&iter\+Base)
+\begin{DoxyCompactList}\small\item\em Metoda służąca do wyszukiwania określonego elementu w bazie kategorii. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bot_a0647d3331513b34b7a0bf228a0238e26}\label{class_bot_a0647d3331513b34b7a0bf228a0238e26}} 
+void \mbox{\hyperlink{class_bot_a0647d3331513b34b7a0bf228a0238e26}{print\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja umożliwiająca wypisanie zawartości bazy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bot_aadccbd3061df17c9aea8c7a0db17bebf}\label{class_bot_aadccbd3061df17c9aea8c7a0db17bebf}} 
+void \mbox{\hyperlink{class_bot_aadccbd3061df17c9aea8c7a0db17bebf}{zero\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Metoda mająca za zadanie wyzerować wynik każdej z kategorii w bazie na koniec operacji wyszukiwania. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_bot_a480543fe4ce73868ce89217cc1d0e8a8}{respond}} (\mbox{\hyperlink{class_question}{Question}} \&to\+Answer)
+\begin{DoxyCompactList}\small\item\em Metoda implementująca główną część algorytmu udzielania odpowiedzi; jej zadaniem dla każdego słowa z wiadomośći użytkownika jest określić która kategoria odpowiedzi zawiera je nawiększą ilość razy i przyznać jej punkt; wybrana zostaje kategoria która po przeanalizowaniu wszystkich słów w wiadomości użytkownika posiada największą ilość punktów. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bot_a35146f212ca03da9c7d56d76d1792861}\label{class_bot_a35146f212ca03da9c7d56d76d1792861}} 
+void \mbox{\hyperlink{class_bot_a35146f212ca03da9c7d56d76d1792861}{start\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wywołująca metody do rozpoczęcia sesji w obiektach bazy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bot_ac326a4316197563d76956801edf3fb4d}\label{class_bot_ac326a4316197563d76956801edf3fb4d}} 
+void \mbox{\hyperlink{class_bot_ac326a4316197563d76956801edf3fb4d}{end\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wywołująca metody do zakończenia sesji w obiektach bazy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_bot_a54de4dae4778a1b25ee2ee6e9dcbfb49}{get\+Response}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca łańcuch znaków zawierający wybraną przez program odpowiedź na wiadomość użytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bot_a41c4a9b18779ca2292580717ee0f5a0c}\label{class_bot_a41c4a9b18779ca2292580717ee0f5a0c}} 
+vector$<$ \mbox{\hyperlink{class_category}{Category}} $>$ \mbox{\hyperlink{class_bot_a41c4a9b18779ca2292580717ee0f5a0c}{base}}
+\begin{DoxyCompactList}\small\item\em Wektor zawierający obiekty klasy reprezentującej kategorie tematyczne w zakresie których program może udzielać odpowiedzi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa implementująca algorytm wyboru odpowiedzi. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bot_adc90e9f8e85c06332324ccf3fb851cca}\label{class_bot_adc90e9f8e85c06332324ccf3fb851cca}} 
+\index{Bot@{Bot}!addToBase@{addToBase}}
+\index{addToBase@{addToBase}!Bot@{Bot}}
+\subsubsection{\texorpdfstring{addToBase()}{addToBase()}}
+{\footnotesize\ttfamily void Bot\+::add\+To\+Base (\begin{DoxyParamCaption}\item[{string \&}]{name,  }\item[{vector$<$ string $>$ \&}]{actual\+Response,  }\item[{vector$<$ pair$<$ string, int $>$$>$ \&}]{associated\+Words }\end{DoxyParamCaption})}
+
+
+
+Metoda dodająca nowy obiekt reprezentujący kategorię odpowiedzi do bazy lub wzbogacająca istniejący obiekt o nowe skojarzone z nim słowa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & to sczytana z pliku nazwa kategorii \\
+\hline
+{\em actual\+Response} & to wektor reprezentujący zbiór odpowiedzi dla danej kategorii sczytanych w danym kroku z pliku \\
+\hline
+{\em associated\+Words} & to wektor par napis-\/liczba całkowita reprezentujący słowa skojarzone z daną kategorią wraz z liczbą ich wystąpień sczytane w danym kroku z pliku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bot_a6c542b51a3b65415f696a0b60cf877d8}\label{class_bot_a6c542b51a3b65415f696a0b60cf877d8}} 
+\index{Bot@{Bot}!findClassInBase@{findClassInBase}}
+\index{findClassInBase@{findClassInBase}!Bot@{Bot}}
+\subsubsection{\texorpdfstring{findClassInBase()}{findClassInBase()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_category}{Category}} $>$\+::iterator \& Bot\+::find\+Class\+In\+Base (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{vector$<$ \mbox{\hyperlink{class_category}{Category}} $>$\+::iterator \&}]{iter\+Base }\end{DoxyParamCaption})}
+
+
+
+Metoda służąca do wyszukiwania określonego elementu w bazie kategorii. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & to nazwa poszukiwanej kategorii \\
+\hline
+{\em iter\+Base} & to iterator od pozycji którego powinno rozpocząć się przeszukiwanie wektora reprezentującego bazę \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+iterator określający pozycję znalezionego elementu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bot_a54de4dae4778a1b25ee2ee6e9dcbfb49}\label{class_bot_a54de4dae4778a1b25ee2ee6e9dcbfb49}} 
+\index{Bot@{Bot}!getResponse@{getResponse}}
+\index{getResponse@{getResponse}!Bot@{Bot}}
+\subsubsection{\texorpdfstring{getResponse()}{getResponse()}}
+{\footnotesize\ttfamily string Bot\+::get\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda zwracająca łańcuch znaków zawierający wybraną przez program odpowiedź na wiadomość użytkownika. 
+
+\begin{DoxyReturn}{Returns}
+odpowiedź wybrana przez algorytm 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bot_a480543fe4ce73868ce89217cc1d0e8a8}\label{class_bot_a480543fe4ce73868ce89217cc1d0e8a8}} 
+\index{Bot@{Bot}!respond@{respond}}
+\index{respond@{respond}!Bot@{Bot}}
+\subsubsection{\texorpdfstring{respond()}{respond()}}
+{\footnotesize\ttfamily string Bot\+::respond (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_question}{Question}} \&}]{to\+Answer }\end{DoxyParamCaption})}
+
+
+
+Metoda implementująca główną część algorytmu udzielania odpowiedzi; jej zadaniem dla każdego słowa z wiadomośći użytkownika jest określić która kategoria odpowiedzi zawiera je nawiększą ilość razy i przyznać jej punkt; wybrana zostaje kategoria która po przeanalizowaniu wszystkich słów w wiadomości użytkownika posiada największą ilość punktów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obiekt} & klasy \mbox{\hyperlink{class_question}{Question}} zawierający przetworzony łańcuch znaków zawierający wiadomość użytkownika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+łańcuch znaków będący odpowiedzią programu na wiadomość użytkownika 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bot.\+h\item 
+Bot.\+cpp\end{DoxyCompactItemize}

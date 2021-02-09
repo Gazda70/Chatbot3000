@@ -1,0 +1,1 @@
+parentx:400.0 parenty:1000.0 charsize:0.03 posx:0.1 posy:0.04

@@ -1,0 +1,164 @@
+\hypertarget{class_begin_screen}{}\section{Begin\+Screen Class Reference}
+\label{class_begin_screen}\index{BeginScreen@{BeginScreen}}
+
+
+Klasa-\/singleton reprezentująca fragment interfejsu umożliwiający wybór czy użytkownik chce powrócić do poprzedniej konwersacji czy rozpoczać kolejną  
+
+
+
+
+{\ttfamily \#include $<$Begin\+Screen.\+h$>$}
+
+Inheritance diagram for Begin\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_begin_screen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+State \mbox{\hyperlink{class_begin_screen_a49b4b67234a8f16d7aa6ba0f0ec982a2}{manage\+Mouse}} (Vector2f mousepos)
+\begin{DoxyCompactList}\small\item\em metoda do obsługi informacji z myszki -\/ wciśnięcie klawisza \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_begin_screen_a7f35b82f9f7ecceb5d45a33298812285}{manage\+Keyboard}} (sf\+::\+Uint32 entered)
+\begin{DoxyCompactList}\small\item\em metoda do obsługi informacji z klawiatury \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_begin_screen_aa105e5520474e8d9eb1f108cf736967b}{manage\+Scroll}} (float delta)
+\begin{DoxyCompactList}\small\item\em metoda do obsługi informacji z myszki -\/ użycie koła myszki \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_begin_screen_a891ea875427d812284dce3ceb83839bc}{draw}} (Render\+Target \&target, Render\+States states)
+\begin{DoxyCompactList}\small\item\em Metoda służacą do wyrysowania obiektu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_begin_screen_aff2dece17ff10fbba21e700add04f047}\label{class_begin_screen_aff2dece17ff10fbba21e700add04f047}} 
+\mbox{\hyperlink{class_begin_screen_aff2dece17ff10fbba21e700add04f047}{$\sim$\+Begin\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor, zwalnia zaalokowaną dynamicznie pamięć \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_begin_screen_ad02e3ad29e7f81d1922e6d62b7377282}\label{class_begin_screen_ad02e3ad29e7f81d1922e6d62b7377282}} 
+static \mbox{\hyperlink{class_begin_screen}{Begin\+Screen}} $\ast$ \mbox{\hyperlink{class_begin_screen_ad02e3ad29e7f81d1922e6d62b7377282}{get\+Instance}} (double mywidth, double myheight, \mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} $\ast$manager)
+\begin{DoxyCompactList}\small\item\em metoda umożliwiająca dostęp do instancji klasy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_begin_screen_aa98715c8198b99da006c49b314a278d9}{Begin\+Screen}} (double mywidth, double myheight, \mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} $\ast$manager)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_begin_screen_a7b3dca4f818afd0aebcaf0c156052cf1}\label{class_begin_screen_a7b3dca4f818afd0aebcaf0c156052cf1}} 
+\mbox{\hyperlink{class_button}{Button}} $\ast$ \mbox{\hyperlink{class_begin_screen_a7b3dca4f818afd0aebcaf0c156052cf1}{beginscreen}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica obiektów klasy \mbox{\hyperlink{class_button}{Button}} tworzących przyciski widoczne na ekranie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_begin_screen_aed874b0a42d5b8d0f7753e8b92cd16d3}\label{class_begin_screen_aed874b0a42d5b8d0f7753e8b92cd16d3}} 
+\mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} $\ast$ \mbox{\hyperlink{class_begin_screen_aed874b0a42d5b8d0f7753e8b92cd16d3}{my\+Manager}}
+\begin{DoxyCompactList}\small\item\em Wskaźnik na obiekt klasy obslugującej konwersację, konieczny przy decyzji czy rozpocząć kolejną konwersację czy wrócić do poprzedniej. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa-\/singleton reprezentująca fragment interfejsu umożliwiający wybór czy użytkownik chce powrócić do poprzedniej konwersacji czy rozpoczać kolejną 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_begin_screen_aa98715c8198b99da006c49b314a278d9}\label{class_begin_screen_aa98715c8198b99da006c49b314a278d9}} 
+\index{BeginScreen@{BeginScreen}!BeginScreen@{BeginScreen}}
+\index{BeginScreen@{BeginScreen}!BeginScreen@{BeginScreen}}
+\subsubsection{\texorpdfstring{BeginScreen()}{BeginScreen()}}
+{\footnotesize\ttfamily Begin\+Screen\+::\+Begin\+Screen (\begin{DoxyParamCaption}\item[{double}]{mywidth,  }\item[{double}]{myheight,  }\item[{\mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} $\ast$}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mywidth} & szerokość sceny \\
+\hline
+{\em myheight} & wysokość sceny \\
+\hline
+{\em wskaźnik} & na menedżera konwersacji \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_begin_screen_a891ea875427d812284dce3ceb83839bc}\label{class_begin_screen_a891ea875427d812284dce3ceb83839bc}} 
+\index{BeginScreen@{BeginScreen}!draw@{draw}}
+\index{draw@{draw}!BeginScreen@{BeginScreen}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Begin\+Screen\+::draw (\begin{DoxyParamCaption}\item[{Render\+Target \&}]{target,  }\item[{Render\+States}]{states }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda służacą do wyrysowania obiektu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & obiekt na którym ma być narysowany obiekt \\
+\hline
+{\em state} & stan obiektu do narysowania \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_ab9f74bb4bf0d0ee2a8280354ba0ff85e}{Screen}}.
+
+\mbox{\Hypertarget{class_begin_screen_a7f35b82f9f7ecceb5d45a33298812285}\label{class_begin_screen_a7f35b82f9f7ecceb5d45a33298812285}} 
+\index{BeginScreen@{BeginScreen}!manageKeyboard@{manageKeyboard}}
+\index{manageKeyboard@{manageKeyboard}!BeginScreen@{BeginScreen}}
+\subsubsection{\texorpdfstring{manageKeyboard()}{manageKeyboard()}}
+{\footnotesize\ttfamily void Begin\+Screen\+::manage\+Keyboard (\begin{DoxyParamCaption}\item[{sf\+::\+Uint32}]{entered }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+metoda do obsługi informacji z klawiatury 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entered} & kod znaku klawisza wciśniętego na klawiaturze \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_a5b385381d2ba942567f4317e916c9951}{Screen}}.
+
+\mbox{\Hypertarget{class_begin_screen_a49b4b67234a8f16d7aa6ba0f0ec982a2}\label{class_begin_screen_a49b4b67234a8f16d7aa6ba0f0ec982a2}} 
+\index{BeginScreen@{BeginScreen}!manageMouse@{manageMouse}}
+\index{manageMouse@{manageMouse}!BeginScreen@{BeginScreen}}
+\subsubsection{\texorpdfstring{manageMouse()}{manageMouse()}}
+{\footnotesize\ttfamily U\+I\+State Begin\+Screen\+::manage\+Mouse (\begin{DoxyParamCaption}\item[{Vector2f}]{mousepos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+metoda do obsługi informacji z myszki -\/ wciśnięcie klawisza 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mousepos} & położenie myszki w momencie naciśnięcia klawisza \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_aee89e0a473a855ddd0ae9cd38c5f2529}{Screen}}.
+
+\mbox{\Hypertarget{class_begin_screen_aa105e5520474e8d9eb1f108cf736967b}\label{class_begin_screen_aa105e5520474e8d9eb1f108cf736967b}} 
+\index{BeginScreen@{BeginScreen}!manageScroll@{manageScroll}}
+\index{manageScroll@{manageScroll}!BeginScreen@{BeginScreen}}
+\subsubsection{\texorpdfstring{manageScroll()}{manageScroll()}}
+{\footnotesize\ttfamily void Begin\+Screen\+::manage\+Scroll (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+metoda do obsługi informacji z myszki -\/ użycie koła myszki 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & odległość o jaką powinien się przesunąć widok \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_a039b9d63b0afafff7af22c26e2d81f5e}{Screen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Begin\+Screen.\+h\item 
+Begin\+Screen.\+cpp\end{DoxyCompactItemize}

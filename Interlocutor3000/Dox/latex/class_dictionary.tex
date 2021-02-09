@@ -1,0 +1,101 @@
+\hypertarget{class_dictionary}{}\section{Dictionary Class Reference}
+\label{class_dictionary}\index{Dictionary@{Dictionary}}
+
+
+Klasa do przechowywania i rejestrowania ilości słów.  
+
+
+
+
+{\ttfamily \#include $<$Dictionary.\+h$>$}
+
+Inheritance diagram for Dictionary\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dictionary}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dictionary_ac81c71164aa52b6d0283d5668022d1fc}\label{class_dictionary_ac81c71164aa52b6d0283d5668022d1fc}} 
+\mbox{\hyperlink{class_dictionary_ac81c71164aa52b6d0283d5668022d1fc}{Dictionary}} ()=default
+\begin{DoxyCompactList}\small\item\em Konstruktor bezargumentowy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dictionary_aa162f77ffd281cebb669e6cdd3961524}{Dictionary}} (vector$<$ pair$<$ string, int $>$$>$ my\+Dict)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dictionary_acfff484035a16775df9621b012d3f8cd}{add\+To\+Dict}} (vector$<$ pair$<$ string, int $>$$>$ \&to\+Add)
+\begin{DoxyCompactList}\small\item\em Metoda dodająca wektor ze zliczonymi słowami do obiektu. \end{DoxyCompactList}\item 
+std\+::pair$<$ bool, int $>$ \mbox{\hyperlink{class_dictionary_ae20890658661737cc9c5e359384489a6}{in\+Dict}} (string another)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdzająca czy dane słowo jest zapisane w obiekcie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dictionary_a3260ddd92c3ffe8b2e07202076354d2b}\label{class_dictionary_a3260ddd92c3ffe8b2e07202076354d2b}} 
+void \mbox{\hyperlink{class_dictionary_a3260ddd92c3ffe8b2e07202076354d2b}{print\+Dictionary}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypisująca zawartość wektora słów na wyjście konsolowe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dictionary_a187d092adc1ef7bdf396219ecde72f24}\label{class_dictionary_a187d092adc1ef7bdf396219ecde72f24}} 
+vector$<$ pair$<$ string, int $>$ $>$ \mbox{\hyperlink{class_dictionary_a187d092adc1ef7bdf396219ecde72f24}{dictionary}}
+\begin{DoxyCompactList}\small\item\em Wektor przechowujący słowa wraz z liczbą ich wystąpień \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa do przechowywania i rejestrowania ilości słów. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dictionary_aa162f77ffd281cebb669e6cdd3961524}\label{class_dictionary_aa162f77ffd281cebb669e6cdd3961524}} 
+\index{Dictionary@{Dictionary}!Dictionary@{Dictionary}}
+\index{Dictionary@{Dictionary}!Dictionary@{Dictionary}}
+\subsubsection{\texorpdfstring{Dictionary()}{Dictionary()}}
+{\footnotesize\ttfamily Dictionary\+::\+Dictionary (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ string, int $>$$>$}]{my\+Dict }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Dict} & wektor słów do przechowywania w obiekcie \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dictionary_acfff484035a16775df9621b012d3f8cd}\label{class_dictionary_acfff484035a16775df9621b012d3f8cd}} 
+\index{Dictionary@{Dictionary}!addToDict@{addToDict}}
+\index{addToDict@{addToDict}!Dictionary@{Dictionary}}
+\subsubsection{\texorpdfstring{addToDict()}{addToDict()}}
+{\footnotesize\ttfamily void Dictionary\+::add\+To\+Dict (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ string, int $>$$>$ \&}]{to\+Add }\end{DoxyParamCaption})}
+
+
+
+Metoda dodająca wektor ze zliczonymi słowami do obiektu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Add} & wektor słów do dodania do wektora obecnego w obiekcie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dictionary_ae20890658661737cc9c5e359384489a6}\label{class_dictionary_ae20890658661737cc9c5e359384489a6}} 
+\index{Dictionary@{Dictionary}!inDict@{inDict}}
+\index{inDict@{inDict}!Dictionary@{Dictionary}}
+\subsubsection{\texorpdfstring{inDict()}{inDict()}}
+{\footnotesize\ttfamily std\+::pair$<$ bool, int $>$ Dictionary\+::in\+Dict (\begin{DoxyParamCaption}\item[{string}]{another }\end{DoxyParamCaption})}
+
+
+
+Metoda sprawdzająca czy dane słowo jest zapisane w obiekcie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em słowo} & którego występowanie jest sprawdzane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+para wartość logiczna -\/ zmienna całkowita; wartość logiczna przyjmuje wartość true jeżeli szukany obiekt został znaleziony, false w przeciwnym wypadku; zmienna całkowita określa liczbę wystąpien danego słowa w wektorze obiektu -\/ 0 w przypadku braku 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dictionary.\+h\item 
+Dictionary.\+cpp\end{DoxyCompactItemize}

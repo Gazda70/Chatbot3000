@@ -1,0 +1,147 @@
+\hypertarget{class_u_i}{}\section{UI Class Reference}
+\label{class_u_i}\index{UI@{UI}}
+
+
+Klasa reprezentująca interfejs graficzny \char`\"{}zarządca interfejsu\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$U\+I.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_i_afbd1850b7e5e8627a0d5f3897cf65bea}{UI}} (Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_u_i_afe0e8097637af0f8898b0ffbba871bcb}\label{class_u_i_afe0e8097637af0f8898b0ffbba871bcb}} 
+void \mbox{\hyperlink{class_u_i_afe0e8097637af0f8898b0ffbba871bcb}{events\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Metoda do obsługi zdarzeń związanych z akcjami użytkownika (mysz, klawiatura); główna pętla programu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_u_i_a0135d8335faa33e407519db4b723d636}\label{class_u_i_a0135d8335faa33e407519db4b723d636}} 
+void \mbox{\hyperlink{class_u_i_a0135d8335faa33e407519db4b723d636}{manage\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Metoda do decydowania jakiego rodzaju interakcję użytkownik podjął z interfejsem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_a132cf813c56c65d3756dc136b021de1c}{manage\+Mouse}} (Vector2f mousepos)
+\begin{DoxyCompactList}\small\item\em Metoda do obsługi myszki -\/ naciśniecie klawisza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_a30ed84234a73dff1092674459f36d6f4}{manage\+Keyboard}} (sf\+::\+Uint32 entered)
+\begin{DoxyCompactList}\small\item\em Metoda do obsługi klawiatury. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_a94799c22dde5791cc3428a307b5edd41}{manage\+Scroll}} (float delta)
+\begin{DoxyCompactList}\small\item\em Metoda do obsługi myszki -\/ użycie koła myszki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_aaf58d768dcc0d9a2d55e87e1a02f853e}{change\+State}} (U\+I\+State newest)
+\begin{DoxyCompactList}\small\item\em Metoda do zmiany aktualnego stanu interfejsu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_u_i_a11a5b60d8f59c41b6d1acf9d153eaafa}\label{class_u_i_a11a5b60d8f59c41b6d1acf9d153eaafa}} 
+void \mbox{\hyperlink{class_u_i_a11a5b60d8f59c41b6d1acf9d153eaafa}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Metoda do narysowania interfejus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_u_i_a0eddf861167228994af1f3fd1b663a54}\label{class_u_i_a0eddf861167228994af1f3fd1b663a54}} 
+void \mbox{\hyperlink{class_u_i_a0eddf861167228994af1f3fd1b663a54}{set\+Conv\+Logic}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Metoda do pobrania informacji potrzebnych do działania programu i stworzenia stosownych obiektów. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_u_i_a1b23d0c64c7cbb3d143d90ec532a7ccd}\label{class_u_i_a1b23d0c64c7cbb3d143d90ec532a7ccd}} 
+\mbox{\hyperlink{class_u_i_a1b23d0c64c7cbb3d143d90ec532a7ccd}{$\sim$\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor, zwalnia zaalokowaną dynamicznie pamięć \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_u_i_aa4256494d1f128336a99d4fa467192e1}\label{class_u_i_aa4256494d1f128336a99d4fa467192e1}} 
+U\+I\+State \mbox{\hyperlink{class_u_i_aa4256494d1f128336a99d4fa467192e1}{actual}}
+\begin{DoxyCompactList}\small\item\em Aktualny stan interfejsu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_u_i_af13c87cd0e8f81e26542fb119a52d713}\label{class_u_i_af13c87cd0e8f81e26542fb119a52d713}} 
+Event \mbox{\hyperlink{class_u_i_af13c87cd0e8f81e26542fb119a52d713}{event}}
+\begin{DoxyCompactList}\small\item\em Obiekt kalsy Event do obsługi zdarzeń wywołanych przez użytkownika. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_u_i_a42f0f8ac80e62f581df46e7fe8da29ba}\label{class_u_i_a42f0f8ac80e62f581df46e7fe8da29ba}} 
+\mbox{\hyperlink{class_screen}{Screen}} $\ast$ \mbox{\hyperlink{class_u_i_a42f0f8ac80e62f581df46e7fe8da29ba}{screens}} \mbox{[}5\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica wskaźników na wirtualną klasę reprezentujacą scenę interfejsu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_u_i_a4e25d54a27661f755e5fbd23dce188c8}\label{class_u_i_a4e25d54a27661f755e5fbd23dce188c8}} 
+\mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} $\ast$ \mbox{\hyperlink{class_u_i_a4e25d54a27661f755e5fbd23dce188c8}{my\+Manager}}
+\begin{DoxyCompactList}\small\item\em Wskaźnik na zarządcę konwersacji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_u_i_a5e99127735bd5a083148bf330fc85bae}\label{class_u_i_a5e99127735bd5a083148bf330fc85bae}} 
+Render\+Window \& \mbox{\hyperlink{class_u_i_a5e99127735bd5a083148bf330fc85bae}{my\+Window}}
+\begin{DoxyCompactList}\small\item\em Referencja do okna wyświetlania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa reprezentująca interfejs graficzny \char`\"{}zarządca interfejsu\char`\"{}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_i_afbd1850b7e5e8627a0d5f3897cf65bea}\label{class_u_i_afbd1850b7e5e8627a0d5f3897cf65bea}} 
+\index{UI@{UI}!UI@{UI}}
+\index{UI@{UI}!UI@{UI}}
+\subsubsection{\texorpdfstring{UI()}{UI()}}
+{\footnotesize\ttfamily U\+I\+::\+UI (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & okno wyświetlania \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_i_aaf58d768dcc0d9a2d55e87e1a02f853e}\label{class_u_i_aaf58d768dcc0d9a2d55e87e1a02f853e}} 
+\index{UI@{UI}!changeState@{changeState}}
+\index{changeState@{changeState}!UI@{UI}}
+\subsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void U\+I\+::change\+State (\begin{DoxyParamCaption}\item[{U\+I\+State}]{newest }\end{DoxyParamCaption})}
+
+
+
+Metoda do zmiany aktualnego stanu interfejsu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newest} & nowo ustawiony stan \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_u_i_a30ed84234a73dff1092674459f36d6f4}\label{class_u_i_a30ed84234a73dff1092674459f36d6f4}} 
+\index{UI@{UI}!manageKeyboard@{manageKeyboard}}
+\index{manageKeyboard@{manageKeyboard}!UI@{UI}}
+\subsubsection{\texorpdfstring{manageKeyboard()}{manageKeyboard()}}
+{\footnotesize\ttfamily void U\+I\+::manage\+Keyboard (\begin{DoxyParamCaption}\item[{sf\+::\+Uint32}]{entered }\end{DoxyParamCaption})}
+
+
+
+Metoda do obsługi klawiatury. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entered} & kod wciśniętego klawisza \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_u_i_a132cf813c56c65d3756dc136b021de1c}\label{class_u_i_a132cf813c56c65d3756dc136b021de1c}} 
+\index{UI@{UI}!manageMouse@{manageMouse}}
+\index{manageMouse@{manageMouse}!UI@{UI}}
+\subsubsection{\texorpdfstring{manageMouse()}{manageMouse()}}
+{\footnotesize\ttfamily void U\+I\+::manage\+Mouse (\begin{DoxyParamCaption}\item[{Vector2f}]{mousepos }\end{DoxyParamCaption})}
+
+
+
+Metoda do obsługi myszki -\/ naciśniecie klawisza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mousepos} & położenie myszki \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_u_i_a94799c22dde5791cc3428a307b5edd41}\label{class_u_i_a94799c22dde5791cc3428a307b5edd41}} 
+\index{UI@{UI}!manageScroll@{manageScroll}}
+\index{manageScroll@{manageScroll}!UI@{UI}}
+\subsubsection{\texorpdfstring{manageScroll()}{manageScroll()}}
+{\footnotesize\ttfamily void U\+I\+::manage\+Scroll (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})}
+
+
+
+Metoda do obsługi myszki -\/ użycie koła myszki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & przesunięcie widoku \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+U\+I.\+h\item 
+U\+I.\+cpp\end{DoxyCompactItemize}

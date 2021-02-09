@@ -1,0 +1,89 @@
+\hypertarget{class_process_text}{}\section{Process\+Text Class Reference}
+\label{class_process_text}\index{ProcessText@{ProcessText}}
+
+
+Klasa zapewniająca obróbkę tekstu.  
+
+
+
+
+{\ttfamily \#include $<$Process\+Text.\+h$>$}
+
+Inheritance diagram for Process\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_process_text}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_process_text_a0ed75725009127382c8fec550a139ba8}{tokenize}} (string text)
+\begin{DoxyCompactList}\small\item\em Metoda rozbijająca łańuch znaków złożony z wyrazów i znaków specjalnych na pojedyncze słowa złożone z małych liter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_process_text_a54127c710af4a6539544e1d347075acf}{stem}} (vector$<$ string $>$ \&to\+Stem)
+\begin{DoxyCompactList}\small\item\em Metoda usuwająca końcówkę słowa i zwracająca jego temat. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_process_text_ada619b70f0cbcc68862fb329f42db958}{test\+String}} (string to\+Test)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdzająca czy słowo zawiera wyłącznie dozwolone znaki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa zapewniająca obróbkę tekstu. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_process_text_a54127c710af4a6539544e1d347075acf}\label{class_process_text_a54127c710af4a6539544e1d347075acf}} 
+\index{ProcessText@{ProcessText}!stem@{stem}}
+\index{stem@{stem}!ProcessText@{ProcessText}}
+\subsubsection{\texorpdfstring{stem()}{stem()}}
+{\footnotesize\ttfamily void Process\+Text\+::stem (\begin{DoxyParamCaption}\item[{vector$<$ string $>$ \&}]{to\+Stem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda usuwająca końcówkę słowa i zwracająca jego temat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Stem} & słowo do pozbawienia z koncówki \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_process_text_ada619b70f0cbcc68862fb329f42db958}\label{class_process_text_ada619b70f0cbcc68862fb329f42db958}} 
+\index{ProcessText@{ProcessText}!testString@{testString}}
+\index{testString@{testString}!ProcessText@{ProcessText}}
+\subsubsection{\texorpdfstring{testString()}{testString()}}
+{\footnotesize\ttfamily bool Process\+Text\+::test\+String (\begin{DoxyParamCaption}\item[{string}]{to\+Test }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda sprawdzająca czy słowo zawiera wyłącznie dozwolone znaki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Test} & słowo do sprawdzenia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ łańcuch znaków jest poprawny, false -\/ łańcuch znaków jest niepoprawny 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_process_text_a0ed75725009127382c8fec550a139ba8}\label{class_process_text_a0ed75725009127382c8fec550a139ba8}} 
+\index{ProcessText@{ProcessText}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!ProcessText@{ProcessText}}
+\subsubsection{\texorpdfstring{tokenize()}{tokenize()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Process\+Text\+::tokenize (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda rozbijająca łańuch znaków złożony z wyrazów i znaków specjalnych na pojedyncze słowa złożone z małych liter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & słowo do rozbicia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wektor uzyskanych wyrazów 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Process\+Text.\+h\item 
+Process\+Text.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,163 @@
+\hypertarget{class_convo_manager}{}\section{Convo\+Manager Class Reference}
+\label{class_convo_manager}\index{ConvoManager@{ConvoManager}}
+
+
+Klasa zarządzająca użyciem logiki do przeprowadzenia rozmowy i umożliwiająca zapis do pliku.  
+
+
+
+
+{\ttfamily \#include $<$Convo\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_convo_manager_af13019a25a85c58bd8a931235598a246}\label{class_convo_manager_af13019a25a85c58bd8a931235598a246}} 
+void \mbox{\hyperlink{class_convo_manager_af13019a25a85c58bd8a931235598a246}{print\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Metoda umożliwiająca wypisanie na wyjście konsolowe zawartości bazy programu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_convo_manager_aae9ce968bce8d48be1f852eb67339306}{is\+Previous}} ()
+\begin{DoxyCompactList}\small\item\em Metoda sprawdzająca czy należy narysować poprzednią konwersację \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_convo_manager_a1fe9e8f09c59c7043ac51185c6728fb7}{set\+Previous}} (bool to\+Set)
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca zdecydować czy należy narysować poprzednią konwersację \end{DoxyCompactList}\item 
+vector$<$ pair$<$ string, string $>$ $>$ \& \mbox{\hyperlink{class_convo_manager_a6297e90e7ecf3dc307005b6f14c7bd82}{get\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca wektor w którym przechowywane są pary wiadomość -\/ odpowiedź z aktualnej konwersacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_convo_manager_af9f80e4f664a20b9042753d659d13c0e}{set\+Session\+Content}} (vector$<$ pair$<$ string, string $>$$>$ \&to\+Set)
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca ustawić zawartość wektora przechowującego pary wiadomość -\/ odpowiedź z aktualnej konwersacji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_convo_manager_ae696d5078008fafbe501b3164783480f}\label{class_convo_manager_ae696d5078008fafbe501b3164783480f}} 
+void \mbox{\hyperlink{class_convo_manager_ae696d5078008fafbe501b3164783480f}{start\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca rozpocząć aktualną sesję konwersacji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_convo_manager_a4f8dad1234895c9731d6edd7e793b717}\label{class_convo_manager_a4f8dad1234895c9731d6edd7e793b717}} 
+void \mbox{\hyperlink{class_convo_manager_a4f8dad1234895c9731d6edd7e793b717}{end\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca zakończyć aktualną sesję konwersacji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_convo_manager_aeb6f9fb97e84fdb2e6f84d845167e81a}\label{class_convo_manager_aeb6f9fb97e84fdb2e6f84d845167e81a}} 
+void \mbox{\hyperlink{class_convo_manager_aeb6f9fb97e84fdb2e6f84d845167e81a}{reload\+Conv}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca załadować poprzednią konwersację z pliku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_convo_manager_a8a5632b74b867f48488fdd7b559e5d57}\label{class_convo_manager_a8a5632b74b867f48488fdd7b559e5d57}} 
+void \mbox{\hyperlink{class_convo_manager_a8a5632b74b867f48488fdd7b559e5d57}{save\+Conv}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pozwalająca zapisać poprzednią konwersację do pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_convo_manager_aa241628ae813de8b641b227b1b5ce9f8}{train\+Bot}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Metoda zapełniająca bazę z pliku. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_convo_manager_ab748892188c5b958497203bd6876861b}{send\+Message}} (string message)
+\begin{DoxyCompactList}\small\item\em Metoda wysyłająca wiadomość użytkownika do implementacji algorytmu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_convo_manager_ab490272e7e0e0bb146bdcf59e1f0a2e4}\label{class_convo_manager_ab490272e7e0e0bb146bdcf59e1f0a2e4}} 
+std\+::ostream \& \mbox{\hyperlink{class_convo_manager_ab490272e7e0e0bb146bdcf59e1f0a2e4}{operator$<$$<$}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em Operator wypisania. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_convo_manager_a6f13501ea97fa9f7a0da310e11d0a0ca}\label{class_convo_manager_a6f13501ea97fa9f7a0da310e11d0a0ca}} 
+\mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} \& \mbox{\hyperlink{class_convo_manager_a6f13501ea97fa9f7a0da310e11d0a0ca}{operator=}} (const \mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} \&to\+Copy)
+\begin{DoxyCompactList}\small\item\em Kopiujący operator przypisania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_convo_manager_a4ff5e19893c742be5bc6952b6a5fcc84}\label{class_convo_manager_a4ff5e19893c742be5bc6952b6a5fcc84}} 
+\mbox{\hyperlink{class_category_creator}{Category\+Creator}} \mbox{\hyperlink{class_convo_manager_a4ff5e19893c742be5bc6952b6a5fcc84}{creator}}
+\begin{DoxyCompactList}\small\item\em Obiekt do zainicjalizowania bazy programu informacjami z pliku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_convo_manager_aa82d86cae957b96cf858939d18196749}\label{class_convo_manager_aa82d86cae957b96cf858939d18196749}} 
+\mbox{\hyperlink{class_bot}{Bot}} \mbox{\hyperlink{class_convo_manager_aa82d86cae957b96cf858939d18196749}{interlocutor}}
+\begin{DoxyCompactList}\small\item\em Obiekt zawierający implementację głównej części algorytmu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_convo_manager_a875a3812a849e95379cd0961d7613ec2}\label{class_convo_manager_a875a3812a849e95379cd0961d7613ec2}} 
+vector$<$ pair$<$ string, string $>$ $>$ \mbox{\hyperlink{class_convo_manager_a875a3812a849e95379cd0961d7613ec2}{current\+Session}}
+\begin{DoxyCompactList}\small\item\em Wektor par wiadomość użytkownika -\/ odpowiedź programu umożliwiający łatwe rejestrowanie konwersacji i jej zapis oraz odczyt z pliku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_convo_manager_a68546f29235ef3ce628cbae588164728}\label{class_convo_manager_a68546f29235ef3ce628cbae588164728}} 
+bool \mbox{\hyperlink{class_convo_manager_a68546f29235ef3ce628cbae588164728}{draw\+Previous}}
+\begin{DoxyCompactList}\small\item\em Zmienna określająca czy należy narysować poprzednią, sczytaną z pliku konwersację \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa zarządzająca użyciem logiki do przeprowadzenia rozmowy i umożliwiająca zapis do pliku. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_convo_manager_a6297e90e7ecf3dc307005b6f14c7bd82}\label{class_convo_manager_a6297e90e7ecf3dc307005b6f14c7bd82}} 
+\index{ConvoManager@{ConvoManager}!getSession@{getSession}}
+\index{getSession@{getSession}!ConvoManager@{ConvoManager}}
+\subsubsection{\texorpdfstring{getSession()}{getSession()}}
+{\footnotesize\ttfamily vector$<$pair$<$string, string$>$ $>$\& Convo\+Manager\+::get\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda zwracająca wektor w którym przechowywane są pary wiadomość -\/ odpowiedź z aktualnej konwersacji. 
+
+\begin{DoxyReturn}{Returns}
+zwracany wektor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_convo_manager_aae9ce968bce8d48be1f852eb67339306}\label{class_convo_manager_aae9ce968bce8d48be1f852eb67339306}} 
+\index{ConvoManager@{ConvoManager}!isPrevious@{isPrevious}}
+\index{isPrevious@{isPrevious}!ConvoManager@{ConvoManager}}
+\subsubsection{\texorpdfstring{isPrevious()}{isPrevious()}}
+{\footnotesize\ttfamily bool Convo\+Manager\+::is\+Previous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda sprawdzająca czy należy narysować poprzednią konwersację 
+
+\begin{DoxyReturn}{Returns}
+true -\/ należy, false -\/ nie należy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_convo_manager_ab748892188c5b958497203bd6876861b}\label{class_convo_manager_ab748892188c5b958497203bd6876861b}} 
+\index{ConvoManager@{ConvoManager}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!ConvoManager@{ConvoManager}}
+\subsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily string Convo\+Manager\+::send\+Message (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})}
+
+
+
+Metoda wysyłająca wiadomość użytkownika do implementacji algorytmu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & wiadomość \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uzyskana odpowiedź 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_convo_manager_a1fe9e8f09c59c7043ac51185c6728fb7}\label{class_convo_manager_a1fe9e8f09c59c7043ac51185c6728fb7}} 
+\index{ConvoManager@{ConvoManager}!setPrevious@{setPrevious}}
+\index{setPrevious@{setPrevious}!ConvoManager@{ConvoManager}}
+\subsubsection{\texorpdfstring{setPrevious()}{setPrevious()}}
+{\footnotesize\ttfamily void Convo\+Manager\+::set\+Previous (\begin{DoxyParamCaption}\item[{bool}]{to\+Set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda pozwalająca zdecydować czy należy narysować poprzednią konwersację 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Set} & parametr określający czy narysować poprzednią konwersację true -\/ należy, false -\/ nie należy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_convo_manager_af9f80e4f664a20b9042753d659d13c0e}\label{class_convo_manager_af9f80e4f664a20b9042753d659d13c0e}} 
+\index{ConvoManager@{ConvoManager}!setSessionContent@{setSessionContent}}
+\index{setSessionContent@{setSessionContent}!ConvoManager@{ConvoManager}}
+\subsubsection{\texorpdfstring{setSessionContent()}{setSessionContent()}}
+{\footnotesize\ttfamily void Convo\+Manager\+::set\+Session\+Content (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ string, string $>$$>$ \&}]{to\+Set }\end{DoxyParamCaption})}
+
+
+
+Metoda pozwalająca ustawić zawartość wektora przechowującego pary wiadomość -\/ odpowiedź z aktualnej konwersacji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Set} & ustawiana zawartość wektora \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_convo_manager_aa241628ae813de8b641b227b1b5ce9f8}\label{class_convo_manager_aa241628ae813de8b641b227b1b5ce9f8}} 
+\index{ConvoManager@{ConvoManager}!trainBot@{trainBot}}
+\index{trainBot@{trainBot}!ConvoManager@{ConvoManager}}
+\subsubsection{\texorpdfstring{trainBot()}{trainBot()}}
+{\footnotesize\ttfamily void Convo\+Manager\+::train\+Bot (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Metoda zapełniająca bazę z pliku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & nazwa pliku \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Convo\+Manager.\+h\item 
+Convo\+Manager.\+cpp\end{DoxyCompactItemize}

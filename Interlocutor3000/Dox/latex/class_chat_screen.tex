@@ -1,0 +1,247 @@
+\hypertarget{class_chat_screen}{}\section{Chat\+Screen Class Reference}
+\label{class_chat_screen}\index{ChatScreen@{ChatScreen}}
+
+
+Klasa-\/singleton odpowiadająca za interfejs sceny wysyłania wiadomości.  
+
+
+
+
+{\ttfamily \#include $<$Chat\+Screen.\+h$>$}
+
+Inheritance diagram for Chat\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_chat_screen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_chat_screen_a331fe5da06bc56d1256d4135cd0be324}{set\+Session}} (vector$<$ pair$<$ string, string $>$$>$ \&to\+Set)
+\begin{DoxyCompactList}\small\item\em Metoda do ustawienia aktualnej sesji rozmowy, potrzebna przy wczytywaniu starej rozmowy z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_screen_abb49aa4421d806044c1778be260fb076}{send\+Message}} (std\+::string msg)
+\begin{DoxyCompactList}\small\item\em Metoda do przesyłania wiadomości użytkownika. \end{DoxyCompactList}\item 
+U\+I\+State \mbox{\hyperlink{class_chat_screen_a0367fc37c8e860bc044915b9d8b78682}{manage\+Mouse}} (Vector2f mousepos)
+\begin{DoxyCompactList}\small\item\em metoda do obsługi informacji z myszki -\/ wciśnięcie klawisza \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_screen_a1ab966165fc054af7c623e75e66c29c5}{manage\+Keyboard}} (sf\+::\+Uint32 entered)
+\begin{DoxyCompactList}\small\item\em metoda do obsługi informacji z klawiatury \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_screen_abd1fd89f6ecc5ddbc233a04e571de9be}{manage\+Scroll}} (float delta)
+\begin{DoxyCompactList}\small\item\em metoda do obsługi informacji z myszki -\/ użycie koła myszki \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_ae5ecb5a2afaece6b0f3b0fef21e85727}\label{class_chat_screen_ae5ecb5a2afaece6b0f3b0fef21e85727}} 
+void \mbox{\hyperlink{class_chat_screen_ae5ecb5a2afaece6b0f3b0fef21e85727}{actualize\+Field}} ()
+\begin{DoxyCompactList}\small\item\em metoda do aktualizacji zawartości pola konwersacji -\/ ustawianie awatarów \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_aaab29b4d4235560d46cf650704eb1649}\label{class_chat_screen_aaab29b4d4235560d46cf650704eb1649}} 
+void \mbox{\hyperlink{class_chat_screen_aaab29b4d4235560d46cf650704eb1649}{reset\+Conv}} ()
+\begin{DoxyCompactList}\small\item\em metoda do resetu konwersacji -\/ potrzebna przy ładowaniu konwersacji z pliku \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_aaa39d6e9964fbdea404c5d40f35fd0ad}\label{class_chat_screen_aaa39d6e9964fbdea404c5d40f35fd0ad}} 
+void \mbox{\hyperlink{class_chat_screen_aaa39d6e9964fbdea404c5d40f35fd0ad}{reset\+Field}} ()
+\begin{DoxyCompactList}\small\item\em metoda do resetu pola konwersacji konwersacji \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_screen_a87d8380e53cb84494ff03dd10f6d279c}{draw}} (Render\+Target \&target, Render\+States states)
+\begin{DoxyCompactList}\small\item\em Metoda służacą do wyrysowania obiektu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_a7d3d4ca943306951ef4906d239075c7f}\label{class_chat_screen_a7d3d4ca943306951ef4906d239075c7f}} 
+\mbox{\hyperlink{class_chat_screen_a7d3d4ca943306951ef4906d239075c7f}{$\sim$\+Chat\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor, zwalnia zaalokowaną dynamicznie pamięć \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_chat_screen}{Chat\+Screen}} $\ast$ \mbox{\hyperlink{class_chat_screen_a55f34d1e949a707687f322f09a4bd81a}{get\+Instance}} (double mywidth, double myheight, Render\+Target \&target, \mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} $\ast$manager)
+\begin{DoxyCompactList}\small\item\em Metoda do otrzymania dostępu do jedynej instancji klasy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_chat_screen_a015393e184776b00fcdcefcd487a8378}{Chat\+Screen}} (double mywidth, double myheight, Render\+Target \&target, \mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} $\ast$manager)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_chat_screen_a4a7f9298b854b57eb87b70297a92a90b}\label{class_chat_screen_a4a7f9298b854b57eb87b70297a92a90b}} 
+\mbox{\hyperlink{class_button}{Button}} $\ast$ \mbox{\hyperlink{class_chat_screen_a4a7f9298b854b57eb87b70297a92a90b}{chatscreen}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica z elementami interfejsu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_ac2cffb6f9f504f93caf42bb356797e58}\label{class_chat_screen_ac2cffb6f9f504f93caf42bb356797e58}} 
+\mbox{\hyperlink{class_conversation_field}{Conversation\+Field}} $\ast$ \mbox{\hyperlink{class_chat_screen_ac2cffb6f9f504f93caf42bb356797e58}{my\+Field}}
+\begin{DoxyCompactList}\small\item\em Pole na do wyświetlania awatarów i wiadomości. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_a26f03e78ce119509e98d1497ae79a43d}\label{class_chat_screen_a26f03e78ce119509e98d1497ae79a43d}} 
+Render\+Target \& \mbox{\hyperlink{class_chat_screen_a26f03e78ce119509e98d1497ae79a43d}{my\+Target}}
+\begin{DoxyCompactList}\small\item\em Obiekt na który dana klasa zostaje wyrysowana. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_a123598512cc56853567b20ccbb2e93a5}\label{class_chat_screen_a123598512cc56853567b20ccbb2e93a5}} 
+sf\+::\+View \mbox{\hyperlink{class_chat_screen_a123598512cc56853567b20ccbb2e93a5}{field\+View}}
+\begin{DoxyCompactList}\small\item\em Obiekt umożliwiający przesuwanie widoku podczas scrollowania. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_a18d2e650a4830577f89d550b55c38712}\label{class_chat_screen_a18d2e650a4830577f89d550b55c38712}} 
+\mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} $\ast$ \mbox{\hyperlink{class_chat_screen_a18d2e650a4830577f89d550b55c38712}{my\+Manager}}
+\begin{DoxyCompactList}\small\item\em Menedżer konwersacji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_afa4868220665d28ba1f95ed23905d116}\label{class_chat_screen_afa4868220665d28ba1f95ed23905d116}} 
+bool \mbox{\hyperlink{class_chat_screen_afa4868220665d28ba1f95ed23905d116}{active\+Session}}
+\begin{DoxyCompactList}\small\item\em Informacja o znajdywaniu się w trakcie aktywnej sesji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_aa379a3d9e624b433638d534149c01946}\label{class_chat_screen_aa379a3d9e624b433638d534149c01946}} 
+string \mbox{\hyperlink{class_chat_screen_aa379a3d9e624b433638d534149c01946}{actual\+Message}}
+\begin{DoxyCompactList}\small\item\em Aktualnie przetwarzana informacja od użytkownika. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_chat_screen_a112b32993f3c10168be768dc7a502af5}\label{class_chat_screen_a112b32993f3c10168be768dc7a502af5}} 
+string \mbox{\hyperlink{class_chat_screen_a112b32993f3c10168be768dc7a502af5}{actual\+Response}}
+\begin{DoxyCompactList}\small\item\em Aktualnie przetwarzana odpowiedź programu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa-\/singleton odpowiadająca za interfejs sceny wysyłania wiadomości. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_chat_screen_a015393e184776b00fcdcefcd487a8378}\label{class_chat_screen_a015393e184776b00fcdcefcd487a8378}} 
+\index{ChatScreen@{ChatScreen}!ChatScreen@{ChatScreen}}
+\index{ChatScreen@{ChatScreen}!ChatScreen@{ChatScreen}}
+\subsubsection{\texorpdfstring{ChatScreen()}{ChatScreen()}}
+{\footnotesize\ttfamily Chat\+Screen\+::\+Chat\+Screen (\begin{DoxyParamCaption}\item[{double}]{mywidth,  }\item[{double}]{myheight,  }\item[{Render\+Target \&}]{target,  }\item[{\mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} $\ast$}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mywidth} & szerokość sceny \\
+\hline
+{\em myheight} & wysokość sceny \\
+\hline
+{\em target} & obiekt do narysowania sceny \\
+\hline
+{\em manager} & menedżer konwersacji \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_chat_screen_a87d8380e53cb84494ff03dd10f6d279c}\label{class_chat_screen_a87d8380e53cb84494ff03dd10f6d279c}} 
+\index{ChatScreen@{ChatScreen}!draw@{draw}}
+\index{draw@{draw}!ChatScreen@{ChatScreen}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Chat\+Screen\+::draw (\begin{DoxyParamCaption}\item[{Render\+Target \&}]{target,  }\item[{Render\+States}]{states }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda służacą do wyrysowania obiektu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & obiekt na którym ma być narysowany obiekt \\
+\hline
+{\em state} & stan obiektu do narysowania \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_ab9f74bb4bf0d0ee2a8280354ba0ff85e}{Screen}}.
+
+\mbox{\Hypertarget{class_chat_screen_a55f34d1e949a707687f322f09a4bd81a}\label{class_chat_screen_a55f34d1e949a707687f322f09a4bd81a}} 
+\index{ChatScreen@{ChatScreen}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ChatScreen@{ChatScreen}}
+\subsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_chat_screen}{Chat\+Screen}} $\ast$ Chat\+Screen\+::get\+Instance (\begin{DoxyParamCaption}\item[{double}]{mywidth,  }\item[{double}]{myheight,  }\item[{Render\+Target \&}]{target,  }\item[{\mbox{\hyperlink{class_convo_manager}{Convo\+Manager}} $\ast$}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metoda do otrzymania dostępu do jedynej instancji klasy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mywidth} & szerokość sceny \\
+\hline
+{\em myheight} & wysokość sceny \\
+\hline
+{\em target} & obiekt do narysowania sceny \\
+\hline
+{\em manager} & menedżer konwersacji \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chat_screen_a1ab966165fc054af7c623e75e66c29c5}\label{class_chat_screen_a1ab966165fc054af7c623e75e66c29c5}} 
+\index{ChatScreen@{ChatScreen}!manageKeyboard@{manageKeyboard}}
+\index{manageKeyboard@{manageKeyboard}!ChatScreen@{ChatScreen}}
+\subsubsection{\texorpdfstring{manageKeyboard()}{manageKeyboard()}}
+{\footnotesize\ttfamily void Chat\+Screen\+::manage\+Keyboard (\begin{DoxyParamCaption}\item[{sf\+::\+Uint32}]{entered }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+metoda do obsługi informacji z klawiatury 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entered} & kod znaku klawisza wciśniętego na klawiaturze \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_a5b385381d2ba942567f4317e916c9951}{Screen}}.
+
+\mbox{\Hypertarget{class_chat_screen_a0367fc37c8e860bc044915b9d8b78682}\label{class_chat_screen_a0367fc37c8e860bc044915b9d8b78682}} 
+\index{ChatScreen@{ChatScreen}!manageMouse@{manageMouse}}
+\index{manageMouse@{manageMouse}!ChatScreen@{ChatScreen}}
+\subsubsection{\texorpdfstring{manageMouse()}{manageMouse()}}
+{\footnotesize\ttfamily U\+I\+State Chat\+Screen\+::manage\+Mouse (\begin{DoxyParamCaption}\item[{Vector2f}]{mousepos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+metoda do obsługi informacji z myszki -\/ wciśnięcie klawisza 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mousepos} & położenie myszki w momencie naciśnięcia klawisza \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_aee89e0a473a855ddd0ae9cd38c5f2529}{Screen}}.
+
+\mbox{\Hypertarget{class_chat_screen_abd1fd89f6ecc5ddbc233a04e571de9be}\label{class_chat_screen_abd1fd89f6ecc5ddbc233a04e571de9be}} 
+\index{ChatScreen@{ChatScreen}!manageScroll@{manageScroll}}
+\index{manageScroll@{manageScroll}!ChatScreen@{ChatScreen}}
+\subsubsection{\texorpdfstring{manageScroll()}{manageScroll()}}
+{\footnotesize\ttfamily void Chat\+Screen\+::manage\+Scroll (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+metoda do obsługi informacji z myszki -\/ użycie koła myszki 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & odległość o jaką powinien się przesunąć widok \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_screen_a039b9d63b0afafff7af22c26e2d81f5e}{Screen}}.
+
+\mbox{\Hypertarget{class_chat_screen_abb49aa4421d806044c1778be260fb076}\label{class_chat_screen_abb49aa4421d806044c1778be260fb076}} 
+\index{ChatScreen@{ChatScreen}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!ChatScreen@{ChatScreen}}
+\subsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily void Chat\+Screen\+::send\+Message (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})}
+
+
+
+Metoda do przesyłania wiadomości użytkownika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & wiadomość użytkownika \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chat_screen_a331fe5da06bc56d1256d4135cd0be324}\label{class_chat_screen_a331fe5da06bc56d1256d4135cd0be324}} 
+\index{ChatScreen@{ChatScreen}!setSession@{setSession}}
+\index{setSession@{setSession}!ChatScreen@{ChatScreen}}
+\subsubsection{\texorpdfstring{setSession()}{setSession()}}
+{\footnotesize\ttfamily void Chat\+Screen\+::set\+Session (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ string, string $>$$>$ \&}]{to\+Set }\end{DoxyParamCaption})}
+
+
+
+Metoda do ustawienia aktualnej sesji rozmowy, potrzebna przy wczytywaniu starej rozmowy z pliku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Set} & wektor par wiadomość użytkownika-\/odpowiedź programu \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Chat\+Screen.\+h\item 
+Chat\+Screen.\+cpp\end{DoxyCompactItemize}
